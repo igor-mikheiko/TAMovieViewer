@@ -9,7 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "TARouter.h"
 
-@interface TAViewModel : NSObject
+@protocol TAViewModel <NSObject>
+
+@property (nonatomic, weak) TARouter *router;
+
+@optional
+@property (nonatomic, weak) NSObject *viewDelegate;
+
+@end
+
+@interface TAViewModel : NSObject <TAViewModel>
 
 @property (nonatomic, weak) TARouter *router;
 

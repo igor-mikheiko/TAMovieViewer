@@ -19,6 +19,6 @@
 
 @interface TARootViewController : TAViewController <TARootViewController>
 
-- (void)setFrontViewController:(TAViewController *)viewController;
+- (void)setFrontViewController:(UIViewController *)viewController;
 
 @end

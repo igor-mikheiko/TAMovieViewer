@@ -10,6 +10,7 @@
 #import "TARootViewController.h"
 #import "TAViewsAssembly.h"
 #import "TALoginViewController.h"
+#import "TAMainViewController.h"
 
 @implementation TARouter
 
@@ -29,14 +30,19 @@
     if (completion) {
         completion();
     }
+
+    DDLogVerbose(@"Login screen presented");
 }
 
 - (void)presentMainScreen:(ta_router_completion)completion
 {
+    [self.rootViewController setFrontViewController:[self.viewsDataSource mainViewController]];
     //TODO:
     if (completion) {
         completion();
     }
+
+    DDLogVerbose(@"Main screen presented");
 }
 
 @end

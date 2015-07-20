@@ -15,7 +15,7 @@
 @end
 
 @implementation TARootViewController {
-    __strong TAViewController *_frontViewController;
+    __strong UIViewController *_frontViewController;
 }
 
 - (void)viewDidLoad
@@ -26,7 +26,7 @@
     [self.viewModel preloadScreen];
 }
 
-- (void)setFrontViewController:(TAViewController *)viewController
+- (void)setFrontViewController:(UIViewController *)viewController
 {
     if (_frontViewController) {
         [UIView transitionFromView:_frontViewController.view toView:viewController.view duration:.4f options:UIViewAnimationOptionShowHideTransitionViews completion:^(BOOL finished) {
@@ -42,14 +42,14 @@
 
 #pragma mark - Private
 
-- (void)_removeOldChildViewController:(TAViewController *)viewController
+- (void)_removeOldChildViewController:(UIViewController *)viewController
 {
     [viewController removeFromParentViewController];
     [viewController.view removeFromSuperview];
     [viewController didMoveToParentViewController:nil];
 }
 
-- (void)_addNewChildViewController:(TAViewController *)viewController
+- (void)_addNewChildViewController:(UIViewController *)viewController
 {
     [self addChildViewController:viewController];
     [self.view addSubview:viewController.view];

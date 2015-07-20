@@ -7,6 +7,7 @@
 //
 
 #import "TAAppDelegate.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 @interface TAAppDelegate ()
 
@@ -16,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
