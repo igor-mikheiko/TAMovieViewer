@@ -14,6 +14,8 @@
 
 - (TAViewModel *)rootViewModel;
 
+- (TAViewModel *)loginViewModel;
+
 @end
 
 @interface TAViewModelsAssembly : TyphoonAssembly <TAViewModelsDataSource>

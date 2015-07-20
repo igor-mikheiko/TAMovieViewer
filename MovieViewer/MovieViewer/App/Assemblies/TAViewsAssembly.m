@@ -7,8 +7,9 @@
 //
 
 #import "TAViewsAssembly.h"
-#import "TARootViewController.h"
 #import "TAViewModelsAssembly.h"
+#import "TARootViewController.h"
+#import "TALoginViewController.h"
 
 @implementation TAViewsAssembly
 
@@ -19,6 +20,17 @@
             [initializer injectParameterWith:[self.viewModelsAssembly rootViewModel]];
         }];
         definition.scope = TyphoonScopeSingleton;
+    }];
+}
+
+- (TALoginViewController *)loginViewController
+{
+    return [TyphoonDefinition withClass:[TALoginViewController class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithNibName:bundle:viewModel:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:NSStringFromClass([TALoginViewController class])];
+            [initializer injectParameterWith:[NSBundle mainBundle]];
+            [initializer injectParameterWith:[self.viewModelsAssembly loginViewModel]];
+        }];
     }];
 }
 

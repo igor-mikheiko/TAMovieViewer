@@ -8,11 +8,15 @@
 
 #import "TyphoonAssembly.h"
 
-@class TARootViewController;
+@class TARootViewController,
+TALoginViewController;
 
 @protocol TAViewsDataSource <NSObject>
 
 - (TARootViewController *)rootViewController;
+
+- (TALoginViewController *)loginViewController;
+
 
 @end
 
