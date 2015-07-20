@@ -18,6 +18,19 @@
 		5684E2B51B5D96910004DD14 /* TALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2B31B5D96910004DD14 /* TALoginViewController.m */; };
 		5684E2B61B5D96910004DD14 /* TALoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E2B41B5D96910004DD14 /* TALoginViewController.xib */; };
 		5684E2B91B5D96A50004DD14 /* TALoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2B81B5D96A50004DD14 /* TALoginViewModel.m */; };
+		5684E2C11B5D9A8F0004DD14 /* TADiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2BF1B5D9A8F0004DD14 /* TADiscoveryViewController.m */; };
+		5684E2C21B5D9A8F0004DD14 /* TADiscoveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E2C01B5D9A8F0004DD14 /* TADiscoveryViewController.xib */; };
+		5684E2C51B5D9AA30004DD14 /* TADiscoveryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2C41B5D9AA30004DD14 /* TADiscoveryViewModel.m */; };
+		5684E2C91B5D9AF70004DD14 /* TAFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2C71B5D9AF70004DD14 /* TAFavoritesViewController.m */; };
+		5684E2CA1B5D9AF70004DD14 /* TAFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E2C81B5D9AF70004DD14 /* TAFavoritesViewController.xib */; };
+		5684E2CD1B5D9B0B0004DD14 /* TAFavoritesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2CC1B5D9B0B0004DD14 /* TAFavoritesViewModel.m */; };
+		5684E2D11B5D9B480004DD14 /* TAWatchedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2CF1B5D9B480004DD14 /* TAWatchedViewController.m */; };
+		5684E2D21B5D9B480004DD14 /* TAWatchedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E2D01B5D9B480004DD14 /* TAWatchedViewController.xib */; };
+		5684E2D51B5D9B590004DD14 /* TAWatchedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2D41B5D9B590004DD14 /* TAWatchedViewModel.m */; };
+		5684E2D81B5D9C4E0004DD14 /* TAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2D71B5D9C4E0004DD14 /* TAMainViewController.m */; };
+		5684E2DD1B5D9CE10004DD14 /* TAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2DB1B5D9CE10004DD14 /* TAMenuViewController.m */; };
+		5684E2DE1B5D9CE10004DD14 /* TAMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E2DC1B5D9CE10004DD14 /* TAMenuViewController.xib */; };
+		5684E2E11B5D9CF90004DD14 /* TAMenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2E01B5D9CF90004DD14 /* TAMenuViewModel.m */; };
 		56D7F2CB1B5C0F52005707AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2CA1B5C0F52005707AD /* main.m */; };
 		56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D51B5C0F52005707AD /* Images.xcassets */; };
 		56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */; };
@@ -59,6 +72,28 @@
 		5684E2B41B5D96910004DD14 /* TALoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TALoginViewController.xib; sourceTree = "<group>"; };
 		5684E2B71B5D96A50004DD14 /* TALoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALoginViewModel.h; sourceTree = "<group>"; };
 		5684E2B81B5D96A50004DD14 /* TALoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALoginViewModel.m; sourceTree = "<group>"; };
+		5684E2BE1B5D9A8F0004DD14 /* TADiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoveryViewController.h; sourceTree = "<group>"; };
+		5684E2BF1B5D9A8F0004DD14 /* TADiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoveryViewController.m; sourceTree = "<group>"; };
+		5684E2C01B5D9A8F0004DD14 /* TADiscoveryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TADiscoveryViewController.xib; sourceTree = "<group>"; };
+		5684E2C31B5D9AA30004DD14 /* TADiscoveryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoveryViewModel.h; sourceTree = "<group>"; };
+		5684E2C41B5D9AA30004DD14 /* TADiscoveryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoveryViewModel.m; sourceTree = "<group>"; };
+		5684E2C61B5D9AF70004DD14 /* TAFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFavoritesViewController.h; sourceTree = "<group>"; };
+		5684E2C71B5D9AF70004DD14 /* TAFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFavoritesViewController.m; sourceTree = "<group>"; };
+		5684E2C81B5D9AF70004DD14 /* TAFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAFavoritesViewController.xib; sourceTree = "<group>"; };
+		5684E2CB1B5D9B0B0004DD14 /* TAFavoritesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFavoritesViewModel.h; sourceTree = "<group>"; };
+		5684E2CC1B5D9B0B0004DD14 /* TAFavoritesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFavoritesViewModel.m; sourceTree = "<group>"; };
+		5684E2CE1B5D9B480004DD14 /* TAWatchedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAWatchedViewController.h; sourceTree = "<group>"; };
+		5684E2CF1B5D9B480004DD14 /* TAWatchedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAWatchedViewController.m; sourceTree = "<group>"; };
+		5684E2D01B5D9B480004DD14 /* TAWatchedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAWatchedViewController.xib; sourceTree = "<group>"; };
+		5684E2D31B5D9B590004DD14 /* TAWatchedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAWatchedViewModel.h; sourceTree = "<group>"; };
+		5684E2D41B5D9B590004DD14 /* TAWatchedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAWatchedViewModel.m; sourceTree = "<group>"; };
+		5684E2D61B5D9C4E0004DD14 /* TAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMainViewController.h; sourceTree = "<group>"; };
+		5684E2D71B5D9C4E0004DD14 /* TAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMainViewController.m; sourceTree = "<group>"; };
+		5684E2DA1B5D9CE10004DD14 /* TAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMenuViewController.h; sourceTree = "<group>"; };
+		5684E2DB1B5D9CE10004DD14 /* TAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMenuViewController.m; sourceTree = "<group>"; };
+		5684E2DC1B5D9CE10004DD14 /* TAMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAMenuViewController.xib; sourceTree = "<group>"; };
+		5684E2DF1B5D9CF90004DD14 /* TAMenuViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMenuViewModel.h; sourceTree = "<group>"; };
+		5684E2E01B5D9CF90004DD14 /* TAMenuViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMenuViewModel.m; sourceTree = "<group>"; };
 		56D7F2C51B5C0F52005707AD /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D7F2C91B5C0F52005707AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D7F2CA1B5C0F52005707AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +135,10 @@
 		5684E2941B5D8AB30004DD14 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5684E2BB1B5D9A760004DD14 /* discovery */,
+				5684E2BC1B5D9A760004DD14 /* favorites */,
+				5684E2BD1B5D9A760004DD14 /* watched */,
+				5684E2BA1B5D9A2B0004DD14 /* main */,
 				5684E2B11B5D967D0004DD14 /* login */,
 				5684E2951B5D8AC30004DD14 /* root */,
 			);
@@ -161,6 +200,64 @@
 				5684E2B81B5D96A50004DD14 /* TALoginViewModel.m */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		5684E2BA1B5D9A2B0004DD14 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2D91B5D9CC80004DD14 /* menu */,
+				5684E2D61B5D9C4E0004DD14 /* TAMainViewController.h */,
+				5684E2D71B5D9C4E0004DD14 /* TAMainViewController.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		5684E2BB1B5D9A760004DD14 /* discovery */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2BE1B5D9A8F0004DD14 /* TADiscoveryViewController.h */,
+				5684E2BF1B5D9A8F0004DD14 /* TADiscoveryViewController.m */,
+				5684E2C01B5D9A8F0004DD14 /* TADiscoveryViewController.xib */,
+				5684E2C31B5D9AA30004DD14 /* TADiscoveryViewModel.h */,
+				5684E2C41B5D9AA30004DD14 /* TADiscoveryViewModel.m */,
+			);
+			path = discovery;
+			sourceTree = "<group>";
+		};
+		5684E2BC1B5D9A760004DD14 /* favorites */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2C61B5D9AF70004DD14 /* TAFavoritesViewController.h */,
+				5684E2C71B5D9AF70004DD14 /* TAFavoritesViewController.m */,
+				5684E2C81B5D9AF70004DD14 /* TAFavoritesViewController.xib */,
+				5684E2CB1B5D9B0B0004DD14 /* TAFavoritesViewModel.h */,
+				5684E2CC1B5D9B0B0004DD14 /* TAFavoritesViewModel.m */,
+			);
+			path = favorites;
+			sourceTree = "<group>";
+		};
+		5684E2BD1B5D9A760004DD14 /* watched */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2CE1B5D9B480004DD14 /* TAWatchedViewController.h */,
+				5684E2CF1B5D9B480004DD14 /* TAWatchedViewController.m */,
+				5684E2D01B5D9B480004DD14 /* TAWatchedViewController.xib */,
+				5684E2D31B5D9B590004DD14 /* TAWatchedViewModel.h */,
+				5684E2D41B5D9B590004DD14 /* TAWatchedViewModel.m */,
+			);
+			path = watched;
+			sourceTree = "<group>";
+		};
+		5684E2D91B5D9CC80004DD14 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2DA1B5D9CE10004DD14 /* TAMenuViewController.h */,
+				5684E2DB1B5D9CE10004DD14 /* TAMenuViewController.m */,
+				5684E2DC1B5D9CE10004DD14 /* TAMenuViewController.xib */,
+				5684E2DF1B5D9CF90004DD14 /* TAMenuViewModel.h */,
+				5684E2E01B5D9CF90004DD14 /* TAMenuViewModel.m */,
+			);
+			path = menu;
 			sourceTree = "<group>";
 		};
 		56D7F2BC1B5C0F52005707AD = {
@@ -314,7 +411,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5684E2B61B5D96910004DD14 /* TALoginViewController.xib in Resources */,
+				5684E2DE1B5D9CE10004DD14 /* TAMenuViewController.xib in Resources */,
 				56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */,
+				5684E2C21B5D9A8F0004DD14 /* TADiscoveryViewController.xib in Resources */,
+				5684E2CA1B5D9AF70004DD14 /* TAFavoritesViewController.xib in Resources */,
+				5684E2D21B5D9B480004DD14 /* TAWatchedViewController.xib in Resources */,
 				56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,13 +469,22 @@
 			files = (
 				5684E2981B5D8AE50004DD14 /* TARootViewController.m in Sources */,
 				5684E2B91B5D96A50004DD14 /* TALoginViewModel.m in Sources */,
+				5684E2D81B5D9C4E0004DD14 /* TAMainViewController.m in Sources */,
 				5684E2AD1B5D926A0004DD14 /* TAViewModel.m in Sources */,
+				5684E2D51B5D9B590004DD14 /* TAWatchedViewModel.m in Sources */,
 				5684E2AA1B5D90DE0004DD14 /* TAViewModelsAssembly.m in Sources */,
+				5684E2C51B5D9AA30004DD14 /* TADiscoveryViewModel.m in Sources */,
 				5684E2B51B5D96910004DD14 /* TALoginViewController.m in Sources */,
 				5684E2A71B5D903E0004DD14 /* TAViewsAssembly.m in Sources */,
+				5684E2C11B5D9A8F0004DD14 /* TADiscoveryViewController.m in Sources */,
+				5684E2D11B5D9B480004DD14 /* TAWatchedViewController.m in Sources */,
+				5684E2CD1B5D9B0B0004DD14 /* TAFavoritesViewModel.m in Sources */,
 				5684E29C1B5D8B2C0004DD14 /* TAViewController.m in Sources */,
+				5684E2C91B5D9AF70004DD14 /* TAFavoritesViewController.m in Sources */,
+				5684E2E11B5D9CF90004DD14 /* TAMenuViewModel.m in Sources */,
 				56D7F2CB1B5C0F52005707AD /* main.m in Sources */,
 				5684E2A11B5D8BE30004DD14 /* TAAppDelegate.m in Sources */,
+				5684E2DD1B5D9CE10004DD14 /* TAMenuViewController.m in Sources */,
 				5684E2A41B5D8E0B0004DD14 /* TAApplicationAssembly.m in Sources */,
 				5684E2B01B5D93D80004DD14 /* TARootViewModel.m in Sources */,
 			);

@@ -14,7 +14,15 @@
 
 - (TAViewModel *)rootViewModel;
 
+- (TAViewModel *)menuViewModel;
+
 - (TAViewModel *)loginViewModel;
+
+- (TAViewModel *)discoveryViewModel;
+
+- (TAViewModel *)favoritesViewModel;
+
+- (TAViewModel *)watchedViewModel;
 
 @end
 
