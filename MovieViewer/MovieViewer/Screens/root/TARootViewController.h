@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "TAViewController.h"
 
-@interface TARootViewController : TAViewController
+@class TARootViewModel;
+
+@protocol TARootViewController <NSObject>
+
+@property (nonatomic, strong, readonly) TARootViewModel *viewModel;
+
+@end
+
+@interface TARootViewController : TAViewController <TARootViewController>
+
+- (void)setFrontViewController:(TAViewController *)viewController;
 
 @end

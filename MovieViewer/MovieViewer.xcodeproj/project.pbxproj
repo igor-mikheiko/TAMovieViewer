@@ -32,6 +32,7 @@
 		5684E2DD1B5D9CE10004DD14 /* TAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2DB1B5D9CE10004DD14 /* TAMenuViewController.m */; };
 		5684E2DE1B5D9CE10004DD14 /* TAMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E2DC1B5D9CE10004DD14 /* TAMenuViewController.xib */; };
 		5684E2E11B5D9CF90004DD14 /* TAMenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2E01B5D9CF90004DD14 /* TAMenuViewModel.m */; };
+		5684E2E61B5DA58F0004DD14 /* TARouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2E51B5DA58F0004DD14 /* TARouter.m */; };
 		56D7F2CB1B5C0F52005707AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2CA1B5C0F52005707AD /* main.m */; };
 		56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D51B5C0F52005707AD /* Images.xcassets */; };
 		56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */; };
@@ -58,8 +59,6 @@
 
 /* Begin PBXFileReference section */
 		442A0F1FB7677EFE7F7505F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		0C246BA72BC00FD004CCEAFA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		48B5D32FD7695A6874DDC9FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5684E2961B5D8AE50004DD14 /* TARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARootViewController.h; sourceTree = "<group>"; };
 		5684E2971B5D8AE50004DD14 /* TARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARootViewController.m; sourceTree = "<group>"; };
 		5684E29A1B5D8B2C0004DD14 /* TAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAViewController.h; sourceTree = "<group>"; };
@@ -103,6 +102,8 @@
 		5684E2DC1B5D9CE10004DD14 /* TAMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAMenuViewController.xib; sourceTree = "<group>"; };
 		5684E2DF1B5D9CF90004DD14 /* TAMenuViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMenuViewModel.h; sourceTree = "<group>"; };
 		5684E2E01B5D9CF90004DD14 /* TAMenuViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMenuViewModel.m; sourceTree = "<group>"; };
+		5684E2E41B5DA58F0004DD14 /* TARouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARouter.h; sourceTree = "<group>"; };
+		5684E2E51B5DA58F0004DD14 /* TARouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARouter.m; sourceTree = "<group>"; };
 		56D7F2C51B5C0F52005707AD /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D7F2C91B5C0F52005707AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D7F2CA1B5C0F52005707AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -286,6 +287,23 @@
 			path = menu;
 			sourceTree = "<group>";
 		};
+		5684E2E21B5DA55A0004DD14 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2E31B5DA5640004DD14 /* Navigation */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		5684E2E31B5DA5640004DD14 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2E41B5DA58F0004DD14 /* TARouter.h */,
+				5684E2E51B5DA58F0004DD14 /* TARouter.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		56D7F2BC1B5C0F52005707AD = {
 			isa = PBXGroup;
 			children = (
@@ -309,12 +327,8 @@
 		56D7F2C71B5C0F52005707AD /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				5684E2E21B5DA55A0004DD14 /* Logic */,
 				B4E710331B5D8E84006E21A6 /* Models */,
-				56D7F2CC1B5C0F52005707AD /* AppDelegate.h */,
-				56D7F2CD1B5C0F52005707AD /* AppDelegate.m */,
-				56D7F2CF1B5C0F52005707AD /* ViewController.h */,
-				56D7F2D01B5C0F52005707AD /* ViewController.m */,
-				56D7F2D21B5C0F52005707AD /* Main.storyboard */,
 				5684E29D1B5D8B9B0004DD14 /* App */,
 				5684E2991B5D8B220004DD14 /* Basics */,
 				5684E2941B5D8AB30004DD14 /* Screens */,
@@ -525,12 +539,11 @@
 				B4E710421B5D971D006E21A6 /* TAListResponseObject.m in Sources */,
 				B4E7104B1B5D99C6006E21A6 /* TAWatchlistResponseObject.m in Sources */,
 				B4E7103C1B5D939D006E21A6 /* TAIntegerObject.m in Sources */,
+				5684E2E61B5DA58F0004DD14 /* TARouter.m in Sources */,
 				B4E710391B5D91DE006E21A6 /* TADiscoverItemObject.m in Sources */,
 				B4E710481B5D9975006E21A6 /* TAFavoriteResponseObject.m in Sources */,
 				B4E7103F1B5D9524006E21A6 /* TAFloatObject.m in Sources */,
-				56D7F2D11B5C0F52005707AD /* ViewController.m in Sources */,
 				B4E710361B5D909F006E21A6 /* TADiscoveryResponseObject.m in Sources */,
-				56D7F2CE1B5C0F52005707AD /* AppDelegate.m in Sources */,
 				B4E710451B5D974C006E21A6 /* TAListItemObject.m in Sources */,
 				5684E2981B5D8AE50004DD14 /* TARootViewController.m in Sources */,
 				5684E2B91B5D96A50004DD14 /* TALoginViewModel.m in Sources */,

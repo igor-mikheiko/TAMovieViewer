@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TARouter.h"
 
 @interface TAViewModel : NSObject
+
+@property (nonatomic, weak) TARouter *router;
 
 @end

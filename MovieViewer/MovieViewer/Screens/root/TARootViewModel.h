@@ -10,4 +10,6 @@
 
 @interface TARootViewModel : TAViewModel
 
+- (void)preloadScreen;
+
 @end

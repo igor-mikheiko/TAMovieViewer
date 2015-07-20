@@ -9,6 +9,7 @@
 #import "TAApplicationAssembly.h"
 #import "TAAppDelegate.h"
 #import "TAViewsAssembly.h"
+#import "TARouter.h"
 
 @implementation TAApplicationAssembly
 
@@ -27,6 +28,18 @@
         }];
         
         [definition injectProperty:@selector(rootViewController) with:[self.viewsAssembly rootViewController]];
+    }];
+}
+
+- (TARouter *)appRouter
+{
+    return [TyphoonDefinition withClass:[TARouter class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithRootViewController:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:[self.viewsAssembly rootViewController]];
+        }];
+        [definition injectProperty:@selector(viewsDataSource) with:self.viewsAssembly];
+
+        definition.scope = TyphoonScopeSingleton;
     }];
 }
 
