@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224D3DEAB0A47AEA3B3AD3C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE867138158BA20BE0672B1 /* libPods.a */; };
 		5684E2981B5D8AE50004DD14 /* TARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2971B5D8AE50004DD14 /* TARootViewController.m */; };
 		5684E29C1B5D8B2C0004DD14 /* TAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E29B1B5D8B2C0004DD14 /* TAViewController.m */; };
 		5684E2A11B5D8BE30004DD14 /* TAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2A01B5D8BE30004DD14 /* TAAppDelegate.m */; };
@@ -35,7 +36,14 @@
 		56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D51B5C0F52005707AD /* Images.xcassets */; };
 		56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */; };
 		56D7F2E51B5C0F52005707AD /* MovieViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2E41B5C0F52005707AD /* MovieViewerTests.m */; };
-		61C5E3239F59609BB5ECC9B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C246BA72BC00FD004CCEAFA /* libPods.a */; };
+		B4E710361B5D909F006E21A6 /* TADiscoveryResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E710351B5D909F006E21A6 /* TADiscoveryResponseObject.m */; };
+		B4E710391B5D91DE006E21A6 /* TADiscoverItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E710381B5D91DE006E21A6 /* TADiscoverItemObject.m */; };
+		B4E7103C1B5D939D006E21A6 /* TAIntegerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7103B1B5D939D006E21A6 /* TAIntegerObject.m */; };
+		B4E7103F1B5D9524006E21A6 /* TAFloatObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7103E1B5D9524006E21A6 /* TAFloatObject.m */; };
+		B4E710421B5D971D006E21A6 /* TAListResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E710411B5D971D006E21A6 /* TAListResponseObject.m */; };
+		B4E710451B5D974C006E21A6 /* TAListItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E710441B5D974C006E21A6 /* TAListItemObject.m */; };
+		B4E710481B5D9975006E21A6 /* TAFavoriteResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E710471B5D9975006E21A6 /* TAFavoriteResponseObject.m */; };
+		B4E7104B1B5D99C6006E21A6 /* TAWatchlistResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7104A1B5D99C6006E21A6 /* TAWatchlistResponseObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		442A0F1FB7677EFE7F7505F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		0C246BA72BC00FD004CCEAFA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B5D32FD7695A6874DDC9FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5684E2961B5D8AE50004DD14 /* TARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARootViewController.h; sourceTree = "<group>"; };
@@ -102,7 +111,24 @@
 		56D7F2DE1B5C0F52005707AD /* MovieViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D7F2E31B5C0F52005707AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D7F2E41B5C0F52005707AD /* MovieViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewerTests.m; sourceTree = "<group>"; };
-		8CA0A16975D1F10F002299A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9DE867138158BA20BE0672B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E710341B5D909F006E21A6 /* TADiscoveryResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoveryResponseObject.h; sourceTree = "<group>"; };
+		B4E710351B5D909F006E21A6 /* TADiscoveryResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoveryResponseObject.m; sourceTree = "<group>"; };
+		B4E710371B5D91DE006E21A6 /* TADiscoverItemObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoverItemObject.h; sourceTree = "<group>"; };
+		B4E710381B5D91DE006E21A6 /* TADiscoverItemObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoverItemObject.m; sourceTree = "<group>"; };
+		B4E7103A1B5D939D006E21A6 /* TAIntegerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAIntegerObject.h; sourceTree = "<group>"; };
+		B4E7103B1B5D939D006E21A6 /* TAIntegerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAIntegerObject.m; sourceTree = "<group>"; };
+		B4E7103D1B5D9524006E21A6 /* TAFloatObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFloatObject.h; sourceTree = "<group>"; };
+		B4E7103E1B5D9524006E21A6 /* TAFloatObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFloatObject.m; sourceTree = "<group>"; };
+		B4E710401B5D971D006E21A6 /* TAListResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAListResponseObject.h; sourceTree = "<group>"; };
+		B4E710411B5D971D006E21A6 /* TAListResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAListResponseObject.m; sourceTree = "<group>"; };
+		B4E710431B5D974C006E21A6 /* TAListItemObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAListItemObject.h; sourceTree = "<group>"; };
+		B4E710441B5D974C006E21A6 /* TAListItemObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAListItemObject.m; sourceTree = "<group>"; };
+		B4E710461B5D9975006E21A6 /* TAFavoriteResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFavoriteResponseObject.h; sourceTree = "<group>"; };
+		B4E710471B5D9975006E21A6 /* TAFavoriteResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFavoriteResponseObject.m; sourceTree = "<group>"; };
+		B4E710491B5D99C6006E21A6 /* TAWatchlistResponseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAWatchlistResponseObject.h; sourceTree = "<group>"; };
+		B4E7104A1B5D99C6006E21A6 /* TAWatchlistResponseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAWatchlistResponseObject.m; sourceTree = "<group>"; };
+		D0ADB411BD28461562FFA885 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61C5E3239F59609BB5ECC9B4 /* libPods.a in Frameworks */,
+				224D3DEAB0A47AEA3B3AD3C3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,10 +150,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F5D3810762078078376C592 /* Frameworks */ = {
+		215A5CDBE26CF5B5034C9DFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C246BA72BC00FD004CCEAFA /* libPods.a */,
+				9DE867138158BA20BE0672B1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,8 +292,8 @@
 				56D7F2C71B5C0F52005707AD /* MovieViewer */,
 				56D7F2E11B5C0F52005707AD /* MovieViewerTests */,
 				56D7F2C61B5C0F52005707AD /* Products */,
-				C82AF637C6E0C04AE89DA080 /* Pods */,
-				1F5D3810762078078376C592 /* Frameworks */,
+				E8FF0E9C6CB57478FFF1C216 /* Pods */,
+				215A5CDBE26CF5B5034C9DFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -283,6 +309,12 @@
 		56D7F2C71B5C0F52005707AD /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				B4E710331B5D8E84006E21A6 /* Models */,
+				56D7F2CC1B5C0F52005707AD /* AppDelegate.h */,
+				56D7F2CD1B5C0F52005707AD /* AppDelegate.m */,
+				56D7F2CF1B5C0F52005707AD /* ViewController.h */,
+				56D7F2D01B5C0F52005707AD /* ViewController.m */,
+				56D7F2D21B5C0F52005707AD /* Main.storyboard */,
 				5684E29D1B5D8B9B0004DD14 /* App */,
 				5684E2991B5D8B220004DD14 /* Basics */,
 				5684E2941B5D8AB30004DD14 /* Screens */,
@@ -319,11 +351,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C82AF637C6E0C04AE89DA080 /* Pods */ = {
+		B4E710331B5D8E84006E21A6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				48B5D32FD7695A6874DDC9FD /* Pods.debug.xcconfig */,
-				8CA0A16975D1F10F002299A6 /* Pods.release.xcconfig */,
+				B4E710341B5D909F006E21A6 /* TADiscoveryResponseObject.h */,
+				B4E710351B5D909F006E21A6 /* TADiscoveryResponseObject.m */,
+				B4E710371B5D91DE006E21A6 /* TADiscoverItemObject.h */,
+				B4E710381B5D91DE006E21A6 /* TADiscoverItemObject.m */,
+				B4E7103A1B5D939D006E21A6 /* TAIntegerObject.h */,
+				B4E7103B1B5D939D006E21A6 /* TAIntegerObject.m */,
+				B4E7103D1B5D9524006E21A6 /* TAFloatObject.h */,
+				B4E7103E1B5D9524006E21A6 /* TAFloatObject.m */,
+				B4E710401B5D971D006E21A6 /* TAListResponseObject.h */,
+				B4E710411B5D971D006E21A6 /* TAListResponseObject.m */,
+				B4E710431B5D974C006E21A6 /* TAListItemObject.h */,
+				B4E710441B5D974C006E21A6 /* TAListItemObject.m */,
+				B4E710461B5D9975006E21A6 /* TAFavoriteResponseObject.h */,
+				B4E710471B5D9975006E21A6 /* TAFavoriteResponseObject.m */,
+				B4E710491B5D99C6006E21A6 /* TAWatchlistResponseObject.h */,
+				B4E7104A1B5D99C6006E21A6 /* TAWatchlistResponseObject.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8FF0E9C6CB57478FFF1C216 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0ADB411BD28461562FFA885 /* Pods.debug.xcconfig */,
+				442A0F1FB7677EFE7F7505F2 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -335,11 +390,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56D7F2E81B5C0F52005707AD /* Build configuration list for PBXNativeTarget "MovieViewer" */;
 			buildPhases = (
-				05734E5911B81F78A0C323D6 /* Check Pods Manifest.lock */,
+				9B4CB9798C1664ADCE39E9C4 /* Check Pods Manifest.lock */,
 				56D7F2C11B5C0F52005707AD /* Sources */,
 				56D7F2C21B5C0F52005707AD /* Frameworks */,
 				56D7F2C31B5C0F52005707AD /* Resources */,
-				6B60C9191282EF9645688772 /* Copy Pods Resources */,
+				47328855D6BEB4DB7C13D948 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -430,22 +485,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05734E5911B81F78A0C323D6 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6B60C9191282EF9645688772 /* Copy Pods Resources */ = {
+		47328855D6BEB4DB7C13D948 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -460,6 +500,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9B4CB9798C1664ADCE39E9C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -467,6 +522,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E710421B5D971D006E21A6 /* TAListResponseObject.m in Sources */,
+				B4E7104B1B5D99C6006E21A6 /* TAWatchlistResponseObject.m in Sources */,
+				B4E7103C1B5D939D006E21A6 /* TAIntegerObject.m in Sources */,
+				B4E710391B5D91DE006E21A6 /* TADiscoverItemObject.m in Sources */,
+				B4E710481B5D9975006E21A6 /* TAFavoriteResponseObject.m in Sources */,
+				B4E7103F1B5D9524006E21A6 /* TAFloatObject.m in Sources */,
+				56D7F2D11B5C0F52005707AD /* ViewController.m in Sources */,
+				B4E710361B5D909F006E21A6 /* TADiscoveryResponseObject.m in Sources */,
+				56D7F2CE1B5C0F52005707AD /* AppDelegate.m in Sources */,
+				B4E710451B5D974C006E21A6 /* TAListItemObject.m in Sources */,
 				5684E2981B5D8AE50004DD14 /* TARootViewController.m in Sources */,
 				5684E2B91B5D96A50004DD14 /* TALoginViewModel.m in Sources */,
 				5684E2D81B5D9C4E0004DD14 /* TAMainViewController.m in Sources */,
@@ -602,7 +667,7 @@
 		};
 		56D7F2E91B5C0F52005707AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48B5D32FD7695A6874DDC9FD /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D0ADB411BD28461562FFA885 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MovieViewer/Info.plist;
@@ -613,7 +678,7 @@
 		};
 		56D7F2EA1B5C0F52005707AD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CA0A16975D1F10F002299A6 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 442A0F1FB7677EFE7F7505F2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MovieViewer/Info.plist;
