@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		224D3DEAB0A47AEA3B3AD3C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE867138158BA20BE0672B1 /* libPods.a */; };
+		5684E2981B5D8AE50004DD14 /* TARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2971B5D8AE50004DD14 /* TARootViewController.m */; };
+		5684E29C1B5D8B2C0004DD14 /* TAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E29B1B5D8B2C0004DD14 /* TAViewController.m */; };
+		5684E2A11B5D8BE30004DD14 /* TAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2A01B5D8BE30004DD14 /* TAAppDelegate.m */; };
+		5684E2A41B5D8E0B0004DD14 /* TAApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2A31B5D8E0B0004DD14 /* TAApplicationAssembly.m */; };
+		5684E2A71B5D903E0004DD14 /* TAViewsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2A61B5D903E0004DD14 /* TAViewsAssembly.m */; };
+		5684E2AA1B5D90DE0004DD14 /* TAViewModelsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2A91B5D90DE0004DD14 /* TAViewModelsAssembly.m */; };
+		5684E2AD1B5D926A0004DD14 /* TAViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2AC1B5D926A0004DD14 /* TAViewModel.m */; };
+		5684E2B01B5D93D80004DD14 /* TARootViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2AF1B5D93D80004DD14 /* TARootViewModel.m */; };
+		5684E2B51B5D96910004DD14 /* TALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2B31B5D96910004DD14 /* TALoginViewController.m */; };
+		5684E2B61B5D96910004DD14 /* TALoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E2B41B5D96910004DD14 /* TALoginViewController.xib */; };
+		5684E2B91B5D96A50004DD14 /* TALoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2B81B5D96A50004DD14 /* TALoginViewModel.m */; };
 		56D7F2CB1B5C0F52005707AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2CA1B5C0F52005707AD /* main.m */; };
-		56D7F2CE1B5C0F52005707AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2CD1B5C0F52005707AD /* AppDelegate.m */; };
-		56D7F2D11B5C0F52005707AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2D01B5C0F52005707AD /* ViewController.m */; };
-		56D7F2D41B5C0F52005707AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D21B5C0F52005707AD /* Main.storyboard */; };
 		56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D51B5C0F52005707AD /* Images.xcassets */; };
 		56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */; };
 		56D7F2E51B5C0F52005707AD /* MovieViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2E41B5C0F52005707AD /* MovieViewerTests.m */; };
@@ -37,14 +45,32 @@
 
 /* Begin PBXFileReference section */
 		442A0F1FB7677EFE7F7505F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0C246BA72BC00FD004CCEAFA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B5D32FD7695A6874DDC9FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5684E2961B5D8AE50004DD14 /* TARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARootViewController.h; sourceTree = "<group>"; };
+		5684E2971B5D8AE50004DD14 /* TARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARootViewController.m; sourceTree = "<group>"; };
+		5684E29A1B5D8B2C0004DD14 /* TAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAViewController.h; sourceTree = "<group>"; };
+		5684E29B1B5D8B2C0004DD14 /* TAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAViewController.m; sourceTree = "<group>"; };
+		5684E29F1B5D8BE30004DD14 /* TAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAppDelegate.h; sourceTree = "<group>"; };
+		5684E2A01B5D8BE30004DD14 /* TAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAppDelegate.m; sourceTree = "<group>"; };
+		5684E2A21B5D8E0B0004DD14 /* TAApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAApplicationAssembly.h; sourceTree = "<group>"; };
+		5684E2A31B5D8E0B0004DD14 /* TAApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAApplicationAssembly.m; sourceTree = "<group>"; };
+		5684E2A51B5D903E0004DD14 /* TAViewsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAViewsAssembly.h; sourceTree = "<group>"; };
+		5684E2A61B5D903E0004DD14 /* TAViewsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAViewsAssembly.m; sourceTree = "<group>"; };
+		5684E2A81B5D90DE0004DD14 /* TAViewModelsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAViewModelsAssembly.h; sourceTree = "<group>"; };
+		5684E2A91B5D90DE0004DD14 /* TAViewModelsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAViewModelsAssembly.m; sourceTree = "<group>"; };
+		5684E2AB1B5D926A0004DD14 /* TAViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAViewModel.h; sourceTree = "<group>"; };
+		5684E2AC1B5D926A0004DD14 /* TAViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAViewModel.m; sourceTree = "<group>"; };
+		5684E2AE1B5D93D80004DD14 /* TARootViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARootViewModel.h; sourceTree = "<group>"; };
+		5684E2AF1B5D93D80004DD14 /* TARootViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARootViewModel.m; sourceTree = "<group>"; };
+		5684E2B21B5D96910004DD14 /* TALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALoginViewController.h; sourceTree = "<group>"; };
+		5684E2B31B5D96910004DD14 /* TALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALoginViewController.m; sourceTree = "<group>"; };
+		5684E2B41B5D96910004DD14 /* TALoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TALoginViewController.xib; sourceTree = "<group>"; };
+		5684E2B71B5D96A50004DD14 /* TALoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALoginViewModel.h; sourceTree = "<group>"; };
+		5684E2B81B5D96A50004DD14 /* TALoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALoginViewModel.m; sourceTree = "<group>"; };
 		56D7F2C51B5C0F52005707AD /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D7F2C91B5C0F52005707AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D7F2CA1B5C0F52005707AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		56D7F2CC1B5C0F52005707AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		56D7F2CD1B5C0F52005707AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		56D7F2CF1B5C0F52005707AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		56D7F2D01B5C0F52005707AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		56D7F2D31B5C0F52005707AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56D7F2D51B5C0F52005707AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		56D7F2D81B5C0F52005707AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		56D7F2DE1B5C0F52005707AD /* MovieViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +123,72 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5684E2941B5D8AB30004DD14 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2B11B5D967D0004DD14 /* login */,
+				5684E2951B5D8AC30004DD14 /* root */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5684E2951B5D8AC30004DD14 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2961B5D8AE50004DD14 /* TARootViewController.h */,
+				5684E2971B5D8AE50004DD14 /* TARootViewController.m */,
+				5684E2AE1B5D93D80004DD14 /* TARootViewModel.h */,
+				5684E2AF1B5D93D80004DD14 /* TARootViewModel.m */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		5684E2991B5D8B220004DD14 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				5684E29A1B5D8B2C0004DD14 /* TAViewController.h */,
+				5684E29B1B5D8B2C0004DD14 /* TAViewController.m */,
+				5684E2AB1B5D926A0004DD14 /* TAViewModel.h */,
+				5684E2AC1B5D926A0004DD14 /* TAViewModel.m */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		5684E29D1B5D8B9B0004DD14 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5684E29F1B5D8BE30004DD14 /* TAAppDelegate.h */,
+				5684E2A01B5D8BE30004DD14 /* TAAppDelegate.m */,
+				5684E29E1B5D8BA90004DD14 /* Assemblies */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5684E29E1B5D8BA90004DD14 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2A21B5D8E0B0004DD14 /* TAApplicationAssembly.h */,
+				5684E2A31B5D8E0B0004DD14 /* TAApplicationAssembly.m */,
+				5684E2A51B5D903E0004DD14 /* TAViewsAssembly.h */,
+				5684E2A61B5D903E0004DD14 /* TAViewsAssembly.m */,
+				5684E2A81B5D90DE0004DD14 /* TAViewModelsAssembly.h */,
+				5684E2A91B5D90DE0004DD14 /* TAViewModelsAssembly.m */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		5684E2B11B5D967D0004DD14 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2B21B5D96910004DD14 /* TALoginViewController.h */,
+				5684E2B31B5D96910004DD14 /* TALoginViewController.m */,
+				5684E2B41B5D96910004DD14 /* TALoginViewController.xib */,
+				5684E2B71B5D96A50004DD14 /* TALoginViewModel.h */,
+				5684E2B81B5D96A50004DD14 /* TALoginViewModel.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 		56D7F2BC1B5C0F52005707AD = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +218,9 @@
 				56D7F2CF1B5C0F52005707AD /* ViewController.h */,
 				56D7F2D01B5C0F52005707AD /* ViewController.m */,
 				56D7F2D21B5C0F52005707AD /* Main.storyboard */,
+				5684E29D1B5D8B9B0004DD14 /* App */,
+				5684E2991B5D8B220004DD14 /* Basics */,
+				5684E2941B5D8AB30004DD14 /* Screens */,
 				56D7F2D51B5C0F52005707AD /* Images.xcassets */,
 				56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */,
 				56D7F2C81B5C0F52005707AD /* Supporting Files */,
@@ -273,7 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D7F2D41B5C0F52005707AD /* Main.storyboard in Resources */,
+				5684E2B61B5D96910004DD14 /* TALoginViewController.xib in Resources */,
 				56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */,
 				56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */,
 			);
@@ -336,7 +431,17 @@
 				B4E710361B5D909F006E21A6 /* TADiscoveryResponseObject.m in Sources */,
 				56D7F2CE1B5C0F52005707AD /* AppDelegate.m in Sources */,
 				B4E710451B5D974C006E21A6 /* TAListItemObject.m in Sources */,
+				5684E2981B5D8AE50004DD14 /* TARootViewController.m in Sources */,
+				5684E2B91B5D96A50004DD14 /* TALoginViewModel.m in Sources */,
+				5684E2AD1B5D926A0004DD14 /* TAViewModel.m in Sources */,
+				5684E2AA1B5D90DE0004DD14 /* TAViewModelsAssembly.m in Sources */,
+				5684E2B51B5D96910004DD14 /* TALoginViewController.m in Sources */,
+				5684E2A71B5D903E0004DD14 /* TAViewsAssembly.m in Sources */,
+				5684E29C1B5D8B2C0004DD14 /* TAViewController.m in Sources */,
 				56D7F2CB1B5C0F52005707AD /* main.m in Sources */,
+				5684E2A11B5D8BE30004DD14 /* TAAppDelegate.m in Sources */,
+				5684E2A41B5D8E0B0004DD14 /* TAApplicationAssembly.m in Sources */,
+				5684E2B01B5D93D80004DD14 /* TARootViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,14 +464,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		56D7F2D21B5C0F52005707AD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56D7F2D31B5C0F52005707AD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
