@@ -8,10 +8,13 @@
 
 #import <Typhoon/TyphoonAssembly.h>
 
-@class TAViewsAssembly;
+@class TAViewsAssembly,
+TARouter;
 
 @interface TAApplicationAssembly : TyphoonAssembly
 
 @property (nonatomic, strong) TAViewsAssembly *viewsAssembly;
+
+- (TARouter *)appRouter;
 
 @end

@@ -9,7 +9,11 @@
 #import "TyphoonAssembly.h"
 
 @class TARootViewController,
-TALoginViewController;
+TAMainViewController,
+TALoginViewController,
+TADiscoveryViewController,
+TAFavoritesViewController,
+TAWatchedViewController;
 
 @protocol TAViewsDataSource <NSObject>
 
@@ -17,6 +21,13 @@ TALoginViewController;
 
 - (TALoginViewController *)loginViewController;
 
+- (TADiscoveryViewController *)discoveryViewController;
+
+- (TAFavoritesViewController *)favoritesViewController;
+
+- (TAWatchedViewController *)watchedViewController;
+
+- (TAMainViewController *)mainViewController;
 
 @end
 

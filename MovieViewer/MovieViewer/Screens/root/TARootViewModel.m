@@ -10,4 +10,11 @@
 
 @implementation TARootViewModel
 
+- (void)preloadScreen
+{
+    [self.router presentLoginScreen:^{
+
+    }];
+}
+
 @end

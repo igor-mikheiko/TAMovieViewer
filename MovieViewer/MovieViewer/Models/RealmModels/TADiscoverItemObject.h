@@ -7,6 +7,7 @@
 //
 
 #import "RLMObject.h"
+#import "RLMArray.h"
 #import "TAIntegerObject.h"
 
 @interface TADiscoverItemObject : RLMObject

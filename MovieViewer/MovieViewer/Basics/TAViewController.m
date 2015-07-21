@@ -19,6 +19,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         _viewModel = viewModel;
+        if ([_viewModel respondsToSelector:@selector(setViewDelegate:)]) {
+            _viewModel.viewDelegate = self;
+        }
     }
     return self;
 }
@@ -28,6 +31,9 @@
     self = [super init];
     if (self) {
         _viewModel = viewModel;
+        if ([_viewModel respondsToSelector:@selector(setViewDelegate:)]) {
+            _viewModel.viewDelegate = self;
+        }
     }
     return self;
 }

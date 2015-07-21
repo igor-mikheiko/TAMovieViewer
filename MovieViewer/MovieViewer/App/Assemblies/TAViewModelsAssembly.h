@@ -8,16 +8,27 @@
 
 #import "TyphoonAssembly.h"
 
-@class TAViewModel;
+@class TAApplicationAssembly,
+TAViewModel;
 
 @protocol TAViewModelsDataSource <NSObject>
 
 - (TAViewModel *)rootViewModel;
 
+- (TAViewModel *)menuViewModel;
+
 - (TAViewModel *)loginViewModel;
+
+- (TAViewModel *)discoveryViewModel;
+
+- (TAViewModel *)favoritesViewModel;
+
+- (TAViewModel *)watchedViewModel;
 
 @end
 
 @interface TAViewModelsAssembly : TyphoonAssembly <TAViewModelsDataSource>
+
+@property (nonatomic, strong) TAApplicationAssembly *applicationAssembly;
 
 @end
