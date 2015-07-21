@@ -6,8 +6,8 @@
 //  Copyright © 2015 *instinctools. All rights reserved.
 //
 
-#import "TAFavoriteResponseObject.h"
+#import "TAFavoriteObject.h"
 
-@implementation TAFavoriteResponseObject
+@implementation TAFavoriteObject
 
 @end

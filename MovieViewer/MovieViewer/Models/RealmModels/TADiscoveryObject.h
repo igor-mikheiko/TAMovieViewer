@@ -10,7 +10,7 @@
 #import "RLMArray.h"
 #import "TADiscoverItemObject.h"
 
-@interface TADiscoveryResponseObject : RLMObject
+@interface TADiscoveryObject : RLMObject
 
 @property NSUInteger page;
 @property RLMArray <TADiscoverItemObject> *results;

@@ -8,7 +8,7 @@
 
 #import "RLMObject.h"
 
-@interface TAFavoriteResponseObject : RLMObject
+@interface TAFavoriteObject : RLMObject
 
 @property NSString *mediaType;
 @property NSInteger *mediaID;
