@@ -33,6 +33,9 @@
 		5684E2DE1B5D9CE10004DD14 /* TAMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E2DC1B5D9CE10004DD14 /* TAMenuViewController.xib */; };
 		5684E2E11B5D9CF90004DD14 /* TAMenuViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2E01B5D9CF90004DD14 /* TAMenuViewModel.m */; };
 		5684E2E61B5DA58F0004DD14 /* TARouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2E51B5DA58F0004DD14 /* TARouter.m */; };
+		5684E2F11B5E19A50004DD14 /* TACentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2EF1B5E19A50004DD14 /* TACentralViewController.m */; };
+		5684E2F21B5E19A50004DD14 /* TACentralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E2F01B5E19A50004DD14 /* TACentralViewController.xib */; };
+		5684E2F61B5E213A0004DD14 /* UIViewController+ChildViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2F51B5E213A0004DD14 /* UIViewController+ChildViews.m */; };
 		56D7F2CB1B5C0F52005707AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2CA1B5C0F52005707AD /* main.m */; };
 		56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D51B5C0F52005707AD /* Images.xcassets */; };
 		56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */; };
@@ -114,6 +117,11 @@
 		5684E2E41B5DA58F0004DD14 /* TARouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARouter.h; sourceTree = "<group>"; };
 		5684E2E51B5DA58F0004DD14 /* TARouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARouter.m; sourceTree = "<group>"; };
 		5684E2E71B5DBA030004DD14 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5684E2EE1B5E19A50004DD14 /* TACentralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACentralViewController.h; sourceTree = "<group>"; };
+		5684E2EF1B5E19A50004DD14 /* TACentralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACentralViewController.m; sourceTree = "<group>"; };
+		5684E2F01B5E19A50004DD14 /* TACentralViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TACentralViewController.xib; sourceTree = "<group>"; };
+		5684E2F41B5E213A0004DD14 /* UIViewController+ChildViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ChildViews.h"; sourceTree = "<group>"; };
+		5684E2F51B5E213A0004DD14 /* UIViewController+ChildViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ChildViews.m"; sourceTree = "<group>"; };
 		56D7F2C51B5C0F52005707AD /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D7F2C91B5C0F52005707AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D7F2CA1B5C0F52005707AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -260,6 +268,7 @@
 		5684E2BA1B5D9A2B0004DD14 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				5684E2ED1B5E19930004DD14 /* central */,
 				5684E2D91B5D9CC80004DD14 /* menu */,
 				5684E2D61B5D9C4E0004DD14 /* TAMainViewController.h */,
 				5684E2D71B5D9C4E0004DD14 /* TAMainViewController.m */,
@@ -332,6 +341,16 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		5684E2ED1B5E19930004DD14 /* central */ = {
+			isa = PBXGroup;
+			children = (
+				5684E2EE1B5E19A50004DD14 /* TACentralViewController.h */,
+				5684E2EF1B5E19A50004DD14 /* TACentralViewController.m */,
+				5684E2F01B5E19A50004DD14 /* TACentralViewController.xib */,
+			);
+			path = central;
+			sourceTree = "<group>";
+		};
 		56D7F2BC1B5C0F52005707AD = {
 			isa = PBXGroup;
 			children = (
@@ -358,7 +377,6 @@
 				B4E710901B5DBF2A006E21A6 /* Categories */,
 				B4E710661B5DB55D006E21A6 /* Models */,
 				5684E2E21B5DA55A0004DD14 /* Logic */,
-				B4E710331B5D8E84006E21A6 /* Models */,
 				5684E29D1B5D8B9B0004DD14 /* App */,
 				5684E2991B5D8B220004DD14 /* Basics */,
 				5684E2941B5D8AB30004DD14 /* Screens */,
@@ -456,6 +474,8 @@
 			children = (
 				B4E710911B5DBF73006E21A6 /* NSDateFormatter+TADateFormatters.h */,
 				B4E710921B5DBF74006E21A6 /* NSDateFormatter+TADateFormatters.m */,
+				5684E2F41B5E213A0004DD14 /* UIViewController+ChildViews.h */,
+				5684E2F51B5E213A0004DD14 /* UIViewController+ChildViews.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -552,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5684E2B61B5D96910004DD14 /* TALoginViewController.xib in Resources */,
+				5684E2F21B5E19A50004DD14 /* TACentralViewController.xib in Resources */,
 				5684E2DE1B5D9CE10004DD14 /* TAMenuViewController.xib in Resources */,
 				56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */,
 				5684E2C21B5D9A8F0004DD14 /* TADiscoveryViewController.xib in Resources */,
@@ -608,22 +629,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4E710421B5D971D006E21A6 /* TAListResponseObject.m in Sources */,
-				B4E7104B1B5D99C6006E21A6 /* TAWatchlistResponseObject.m in Sources */,
-				B4E7103C1B5D939D006E21A6 /* TAIntegerObject.m in Sources */,
 				5684E2E61B5DA58F0004DD14 /* TARouter.m in Sources */,
-				B4E710391B5D91DE006E21A6 /* TADiscoverItemObject.m in Sources */,
-				B4E710481B5D9975006E21A6 /* TAFavoriteResponseObject.m in Sources */,
-				B4E7103F1B5D9524006E21A6 /* TAFloatObject.m in Sources */,
-				B4E710361B5D909F006E21A6 /* TADiscoveryResponseObject.m in Sources */,
-				B4E710451B5D974C006E21A6 /* TAListItemObject.m in Sources */,
 				5684E2981B5D8AE50004DD14 /* TARootViewController.m in Sources */,
 				B4E7109C1B5DC286006E21A6 /* TAListChangedResponseModel.m in Sources */,
 				5684E2B91B5D96A50004DD14 /* TALoginViewModel.m in Sources */,
 				B4E7107B1B5DB55D006E21A6 /* TAFavoriteObject.m in Sources */,
 				B4E7107E1B5DB55D006E21A6 /* TAListItemObject.m in Sources */,
+				5684E2F61B5E213A0004DD14 /* UIViewController+ChildViews.m in Sources */,
 				5684E2AD1B5D926A0004DD14 /* TAViewModel.m in Sources */,
 				B4E710791B5DB55D006E21A6 /* TADiscoverItemObject.m in Sources */,
+				5684E2F11B5E19A50004DD14 /* TACentralViewController.m in Sources */,
 				5684E2AA1B5D90DE0004DD14 /* TAViewModelsAssembly.m in Sources */,
 				B4E710991B5DC0CE006E21A6 /* TAListItemResponseModel.m in Sources */,
 				B4E710861B5DB77E006E21A6 /* TAValidateResponseModel.m in Sources */,

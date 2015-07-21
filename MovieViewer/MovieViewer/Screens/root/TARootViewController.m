@@ -9,6 +9,7 @@
 #import "TARootViewController.h"
 #import "TARootViewModel.h"
 #import <Masonry/Masonry.h>
+#import "UIViewController+ChildViews.h"
 
 @interface TARootViewController ()
 
@@ -32,30 +33,10 @@
         }];
     }
 
-    [self _removeOldChildViewController:_frontViewController];
+    [self removeOldChildViewController:_frontViewController];
     _frontViewController = viewController;
-    [self _addNewChildViewController:_frontViewController];
+    [self addNewChildViewController:_frontViewController intoContainer:self.view];
 
-}
-
-#pragma mark - Private
-
-- (void)_removeOldChildViewController:(UIViewController *)viewController
-{
-    [viewController removeFromParentViewController];
-    [viewController.view removeFromSuperview];
-    [viewController didMoveToParentViewController:nil];
-}
-
-- (void)_addNewChildViewController:(UIViewController *)viewController
-{
-    [self addChildViewController:viewController];
-    [self.view addSubview:viewController.view];
-    [viewController.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
-    [viewController didMoveToParentViewController:self];
-    [self.view layoutIfNeeded];
 }
 
 @end

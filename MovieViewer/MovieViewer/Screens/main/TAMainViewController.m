@@ -9,10 +9,11 @@
 #import "TAMainViewController.h"
 #import "TAMenuViewController.h"
 #import "TAViewController.h"
+#import "TACentralViewController.h"
 
-@interface TAMainViewController ()
+@interface TAMainViewController () <TACentralViewOutputDelegate>
 
-@property (nonatomic, strong) UINavigationController *centralNavigationController;
+@property (nonatomic, strong) TACentralViewController *centralContainerViewController;
 
 @end
 
@@ -26,12 +27,13 @@
 
 #pragma mark - Accessors
 
-- (UINavigationController *)centralNavigationController
+- (TACentralViewController *)centralContainerViewController
 {
-    if (!_centralNavigationController) {
-        _centralNavigationController = [[UINavigationController alloc] init];
+    if (!_centralContainerViewController) {
+        _centralContainerViewController = [[TACentralViewController alloc] initWithNibName:NSStringFromClass([TACentralViewController class]) bundle:[NSBundle mainBundle]];
+        [self setFrontViewController:_centralContainerViewController];
     }
-    return _centralNavigationController;
+    return _centralContainerViewController;
 }
 
 - (void)setMenuView:(TAMenuViewController *)menuView
@@ -42,20 +44,13 @@
 
 - (void)setCentralView:(TAViewController *)centralView
 {
-    if (_centralView) {
-        [self.centralNavigationController popViewControllerAnimated:NO];
-    }
-
     _centralView = centralView;
-    [self.centralNavigationController pushViewController:centralView animated:YES];
-    [self setFrontViewController:self.centralNavigationController];
-    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(toggleMenuAction:)];
-    [_centralNavigationController.navigationBar.topItem setLeftBarButtonItems:@[menuButton]];
+    [self.centralContainerViewController setViewController:_centralView];
 }
 
-#pragma mark - Actions
+#pragma mark - 
 
-- (IBAction)toggleMenuAction:(id)sender
+- (void)menuButtonPressed
 {
     [self revealToggleAnimated:YES];
 }
