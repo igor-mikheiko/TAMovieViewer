@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TACentralViewController">
+            <connections>
+                <outlet property="containerView" destination="8Sl-EI-4nO" id="b7k-AP-Xv6"/>
+                <outlet property="titleLabel" destination="hic-Dh-ptm" id="JFe-mm-Ye6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGU-bk-3jT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="AcJ-UA-MMq"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Menu" id="UTF-kM-oW2">
+                            <connections>
+                                <action selector="toggleMenuAction:" destination="-1" id="V4D-uV-9ws"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="x02-L7-0kA"/>
+                        <barButtonItem style="plain" id="MWz-kG-tzV">
+                            <view key="customView" contentMode="scaleToFill" id="tDe-QK-Twx">
+                                <rect key="frame" x="0.0" y="0.0" width="166" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hic-Dh-ptm">
+                                        <rect key="frame" x="62" y="6" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hic-Dh-ptm" firstAttribute="leading" secondItem="tDe-QK-Twx" secondAttribute="leading" id="3ac-rr-sEG"/>
+                                    <constraint firstAttribute="bottom" secondItem="hic-Dh-ptm" secondAttribute="bottom" id="GH7-Sh-0Is"/>
+                                    <constraint firstAttribute="trailing" secondItem="hic-Dh-ptm" secondAttribute="trailing" id="deu-4I-nbW"/>
+                                    <constraint firstItem="hic-Dh-ptm" firstAttribute="top" secondItem="tDe-QK-Twx" secondAttribute="top" id="piL-kR-9Ia"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="D5m-Hw-JpO"/>
+                    </items>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sl-EI-4nO" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8Sl-EI-4nO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Kd-UB-xOn"/>
+                <constraint firstItem="EGU-bk-3jT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7XR-TA-P9V"/>
+                <constraint firstItem="EGU-bk-3jT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FDy-4i-yY5"/>
+                <constraint firstAttribute="bottom" secondItem="8Sl-EI-4nO" secondAttribute="bottom" id="Hyo-0f-Tfc"/>
+                <constraint firstAttribute="trailing" secondItem="8Sl-EI-4nO" secondAttribute="trailing" id="QgX-HW-T7z"/>
+                <constraint firstItem="8Sl-EI-4nO" firstAttribute="top" secondItem="EGU-bk-3jT" secondAttribute="bottom" id="uUQ-RB-Loj"/>
+                <constraint firstAttribute="trailing" secondItem="EGU-bk-3jT" secondAttribute="trailing" id="usv-8B-0Lc"/>
+            </constraints>
+            <point key="canvasLocation" x="565" y="332"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

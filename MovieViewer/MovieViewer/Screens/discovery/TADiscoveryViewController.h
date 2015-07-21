@@ -7,15 +7,16 @@
 //
 
 #import "TAViewController.h"
+#import "TATableViewController.h"
 
 @class TADiscoveryViewModel;
 
 @protocol TADiscoveryViewController <NSObject>
 
-@property (nonatomic, strong, readonly) TADiscoveryViewModel *viewModel;
+@property (nonatomic, strong, readonly) TADiscoveryViewModel<TATableViewModelProtocol> *viewModel;
 
 @end
 
-@interface TADiscoveryViewController : TAViewController <TADiscoveryViewController>
+@interface TADiscoveryViewController : TATableViewController <TADiscoveryViewController>
 
 @end

@@ -10,4 +10,12 @@
 
 @implementation TADiscoveryViewModel
 
+- (void)fetchNextData
+{
+    NSArray *newData = @[];
+    _fetchedData = [_fetchedData ?: @[] arrayByAddingObjectsFromArray:newData];
+
+    [self.viewDelegate tableViewModel:self didFetchNextData:newData];
+}
+
 @end

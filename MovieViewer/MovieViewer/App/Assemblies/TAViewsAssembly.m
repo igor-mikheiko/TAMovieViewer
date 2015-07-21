@@ -64,7 +64,7 @@
 {
     return [TyphoonDefinition withClass:[TADiscoveryViewController class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithNibName:bundle:viewModel:) parameters:^(TyphoonMethod *initializer) {
-            [initializer injectParameterWith:NSStringFromClass([TADiscoveryViewController class])];
+            [initializer injectParameterWith:TATableViewControllerNibName];
             [initializer injectParameterWith:[NSBundle mainBundle]];
             [initializer injectParameterWith:[self.viewModelsAssembly discoveryViewModel]];
         }];
@@ -75,7 +75,7 @@
 {
     return [TyphoonDefinition withClass:[TAFavoritesViewController class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithNibName:bundle:viewModel:) parameters:^(TyphoonMethod *initializer) {
-            [initializer injectParameterWith:NSStringFromClass([TAFavoritesViewController class])];
+            [initializer injectParameterWith:TATableViewControllerNibName];
             [initializer injectParameterWith:[NSBundle mainBundle]];
             [initializer injectParameterWith:[self.viewModelsAssembly favoritesViewModel]];
         }];
@@ -86,7 +86,7 @@
 {
     return [TyphoonDefinition withClass:[TAWatchedViewController class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithNibName:bundle:viewModel:) parameters:^(TyphoonMethod *initializer) {
-            [initializer injectParameterWith:NSStringFromClass([TAWatchedViewController class])];
+            [initializer injectParameterWith:TATableViewControllerNibName];
             [initializer injectParameterWith:[NSBundle mainBundle]];
             [initializer injectParameterWith:[self.viewModelsAssembly watchedViewModel]];
         }];

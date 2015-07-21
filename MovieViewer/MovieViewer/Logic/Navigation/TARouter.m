@@ -28,6 +28,11 @@
 
 - (void)presentLoginScreen:(ta_router_completion)completion
 {
+    if ([self.rootViewController.frontViewController isKindOfClass:[TAMainViewController class]]) {
+        TAMainViewController *mainViewController = (TAMainViewController *)self.rootViewController.frontViewController;
+        [mainViewController revealToggleAnimated:YES];
+    }
+
     [self.rootViewController setFrontViewController:[self.viewsDataSource loginViewController]];
 
     if (completion) {
@@ -59,6 +64,8 @@
     if (completion) {
         completion();
     }
+
+    DDLogVerbose(@"Discovery screen presented");
 }
 
 - (void)presentFavoritesScreen:(ta_router_completion)completion
@@ -72,6 +79,8 @@
     if (completion) {
         completion();
     }
+
+    DDLogVerbose(@"Favorites screen presented");
 }
 
 - (void)presentWatchedScreen:(ta_router_completion)completion
@@ -85,6 +94,9 @@
     if (completion) {
         completion();
     }
+
+
+    DDLogVerbose(@"Watched screen presented");
 }
 
 @end
