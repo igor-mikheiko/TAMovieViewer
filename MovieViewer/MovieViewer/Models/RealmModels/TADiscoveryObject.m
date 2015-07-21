@@ -7,7 +7,6 @@
 //
 
 #import "TADiscoveryObject.h"
-#import <Realm+JSON/RLMObject+JSON.h>
 
 @implementation TADiscoveryObject
 
@@ -18,12 +17,5 @@
              @"total_results" : @"totalResults"};
 }
 
-+ (NSDictionary *) JSONOutboundMappingDictionary {
-    return @{};
-}
-
-+ (NSValueTransformer *)resultsJSONTransformer {
-    return [
-}
 
 @end
