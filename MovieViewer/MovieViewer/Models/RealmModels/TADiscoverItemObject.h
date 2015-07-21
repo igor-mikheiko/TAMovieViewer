@@ -12,7 +12,7 @@
 @interface TADiscoverItemObject : RLMObject
 
 @property BOOL adult;
-@property NSString *backDropPath;
+@property NSString *backdropPath;
 @property RLMArray <TAIntegerObject> *genreIDs;
 @property NSInteger itemID;
 @property NSString *originalLanguage;
@@ -24,7 +24,7 @@
 @property NSString *title;
 @property BOOL video;
 @property float voteAverage;
-@property NSInteger vodeCount;
+@property NSInteger voteCount;
 
 @end
 

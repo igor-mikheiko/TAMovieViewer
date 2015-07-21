@@ -6,8 +6,8 @@
 //  Copyright © 2015 *instinctools. All rights reserved.
 //
 
-#import "TAWatchlistResponseObject.h"
+#import "TAWatchlistObject.h"
 
-@implementation TAWatchlistResponseObject
+@implementation TAWatchlistObject
 
 @end

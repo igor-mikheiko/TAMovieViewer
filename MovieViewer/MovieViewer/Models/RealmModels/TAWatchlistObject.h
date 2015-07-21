@@ -8,7 +8,7 @@
 
 #import "RLMObject.h"
 
-@interface TAWatchlistResponseObject : RLMObject
+@interface TAWatchlistObject : RLMObject
 
 @property NSString *mediaType;
 @property NSInteger mediaId;
