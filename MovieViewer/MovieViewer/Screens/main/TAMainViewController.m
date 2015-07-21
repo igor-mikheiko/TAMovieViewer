@@ -12,9 +12,27 @@
 
 @interface TAMainViewController ()
 
+@property (nonatomic, strong) UINavigationController *centralNavigationController;
+
 @end
 
 @implementation TAMainViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+#pragma mark - Accessors
+
+- (UINavigationController *)centralNavigationController
+{
+    if (!_centralNavigationController) {
+        _centralNavigationController = [[UINavigationController alloc] init];
+    }
+    return _centralNavigationController;
+}
 
 - (void)setMenuView:(TAMenuViewController *)menuView
 {
@@ -24,14 +42,22 @@
 
 - (void)setCentralView:(TAViewController *)centralView
 {
+    if (_centralView) {
+        [self.centralNavigationController popViewControllerAnimated:NO];
+    }
+
     _centralView = centralView;
-    [self setFrontViewController:centralView];
+    [self.centralNavigationController pushViewController:centralView animated:YES];
+    [self setFrontViewController:self.centralNavigationController];
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(toggleMenuAction:)];
+    [_centralNavigationController.navigationBar.topItem setLeftBarButtonItems:@[menuButton]];
 }
 
-- (void)viewDidLoad
+#pragma mark - Actions
+
+- (IBAction)toggleMenuAction:(id)sender
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self revealToggleAnimated:YES];
 }
 
 @end

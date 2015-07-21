@@ -14,9 +14,7 @@
 
 @end
 
-@implementation TARootViewController {
-    __strong UIViewController *_frontViewController;
-}
+@implementation TARootViewController
 
 - (void)viewDidLoad
 {

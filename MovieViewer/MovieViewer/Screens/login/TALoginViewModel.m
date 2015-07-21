@@ -11,6 +11,16 @@
 @implementation TALoginViewModel
 @synthesize viewDelegate;
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.loginString = @"test";
+        self.passwordString = @"1";
+    }
+    return self;
+}
+
 - (void)performLoginAction
 {
     if (self.loginString.length == 0 || self.passwordString.length == 0) {

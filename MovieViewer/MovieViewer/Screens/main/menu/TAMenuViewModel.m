@@ -10,4 +10,33 @@
 
 @implementation TAMenuViewModel
 
+- (void)performShowDiscovery
+{
+    [self.router presentDiscoveryScreen:^{
+    }];
+}
+
+- (void)performShowFavorites
+{
+    [self.router presentFavoritesScreen:^{
+
+    }];
+}
+
+- (void)performShowWatched
+{
+    [self.router presentWatchedScreen:^{
+
+    }];
+}
+
+- (void)performLogOutAction
+{
+    //TODO: logout
+
+    [self.router presentLoginScreen:^{
+
+    }];
+}
+
 @end

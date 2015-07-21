@@ -13,8 +13,8 @@ TAMenuViewController;
 
 @interface TAMainViewController : SWRevealViewController
 
-@property (nonatomic, weak) TAMenuViewController *menuView;
+@property (nonatomic, strong) TAMenuViewController *menuView;
 
-@property (nonatomic, weak) TAViewController *centralView;
+@property (nonatomic, strong) TAViewController *centralView;
 
 @end

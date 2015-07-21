@@ -10,4 +10,12 @@
 
 @interface TAMenuViewModel : TAViewModel
 
+- (void)performShowDiscovery;
+
+- (void)performShowFavorites;
+
+- (void)performShowWatched;
+
+- (void)performLogOutAction;
+
 @end
