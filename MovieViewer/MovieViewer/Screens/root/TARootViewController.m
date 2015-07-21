@@ -8,7 +8,6 @@
 
 #import "TARootViewController.h"
 #import "TARootViewModel.h"
-#import <Masonry/Masonry.h>
 #import "UIViewController+ChildViews.h"
 
 @interface TARootViewController ()

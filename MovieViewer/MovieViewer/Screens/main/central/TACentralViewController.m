@@ -28,15 +28,17 @@
 
 - (void)setViewController:(UIViewController *)viewController
 {
-    if (_childViewController) {
-        [UIView transitionFromView:_childViewController.view toView:viewController.view duration:.4f options:UIViewAnimationOptionShowHideTransitionViews completion:^(BOOL finished) {
+    if (self.view) {
+        if (_childViewController) {
+            [UIView transitionFromView:_childViewController.view toView:viewController.view duration:.4f options:UIViewAnimationOptionShowHideTransitionViews completion:^(BOOL finished) {
 
-        }];
+            }];
+        }
+
+        [self removeOldChildViewController:_childViewController];
+        _childViewController = viewController;
+        [self addNewChildViewController:viewController intoContainer:self.containerView];
     }
-
-    [self removeOldChildViewController:_childViewController];
-    _childViewController = viewController;
-    [self addNewChildViewController:viewController intoContainer:self.containerView];
 }
 
 #pragma mark - Actions

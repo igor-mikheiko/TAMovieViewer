@@ -31,6 +31,7 @@
 {
     if (!_centralContainerViewController) {
         _centralContainerViewController = [[TACentralViewController alloc] initWithNibName:NSStringFromClass([TACentralViewController class]) bundle:[NSBundle mainBundle]];
+        _centralContainerViewController.viewOutputDelegate = self;
         [self setFrontViewController:_centralContainerViewController];
     }
     return _centralContainerViewController;
