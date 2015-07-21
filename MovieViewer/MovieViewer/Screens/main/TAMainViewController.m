@@ -40,6 +40,8 @@
 - (void)setMenuView:(TAMenuViewController *)menuView
 {
     _menuView = menuView;
+    [self setRearViewRevealWidth:CGRectGetWidth(_menuView.view.bounds)];
+    [self setRearViewRevealOverdraw:10.f];
     [self setRearViewController:_menuView];
 }
 
