@@ -47,7 +47,9 @@ NSString *const TATableViewControllerNibName = @"TATableViewController";
             [insertIndices addObject:indexPath];
         }];
 
+        [self.tableView beginUpdates];
         [self.tableView insertRowsAtIndexPaths:insertIndices withRowAnimation:UITableViewRowAnimationNone];
+        [self.tableView endUpdates];
     }
 
     [self.tableView finishInfiniteScroll];
