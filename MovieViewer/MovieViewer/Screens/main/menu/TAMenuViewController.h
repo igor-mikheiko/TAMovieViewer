@@ -8,6 +8,14 @@
 
 #import "TAViewController.h"
 
-@interface TAMenuViewController : TAViewController
+@class TAMenuViewModel;
+
+@protocol TAMenuViewController <NSObject>
+
+@property (nonatomic, strong, readonly) TAMenuViewModel *viewModel;
+
+@end
+
+@interface TAMenuViewController : TAViewController <TAMenuViewController>
 
 @end

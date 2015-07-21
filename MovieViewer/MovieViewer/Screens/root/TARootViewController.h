@@ -19,6 +19,8 @@
 
 @interface TARootViewController : TAViewController <TARootViewController>
 
+@property (nonatomic, strong, readonly) UIViewController *frontViewController;
+
 - (void)setFrontViewController:(UIViewController *)viewController;
 
 @end
