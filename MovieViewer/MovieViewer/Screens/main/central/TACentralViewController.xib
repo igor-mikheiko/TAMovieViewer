@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TACentralViewController">
             <connections>
                 <outlet property="containerView" destination="8Sl-EI-4nO" id="b7k-AP-Xv6"/>
+                <outlet property="titleLabel" destination="hic-Dh-ptm" id="JFe-mm-Ye6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,6 +27,29 @@
                                 <action selector="toggleMenuAction:" destination="-1" id="V4D-uV-9ws"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="x02-L7-0kA"/>
+                        <barButtonItem style="plain" id="MWz-kG-tzV">
+                            <view key="customView" contentMode="scaleToFill" id="tDe-QK-Twx">
+                                <rect key="frame" x="0.0" y="0.0" width="166" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hic-Dh-ptm">
+                                        <rect key="frame" x="62" y="6" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hic-Dh-ptm" firstAttribute="leading" secondItem="tDe-QK-Twx" secondAttribute="leading" id="3ac-rr-sEG"/>
+                                    <constraint firstAttribute="bottom" secondItem="hic-Dh-ptm" secondAttribute="bottom" id="GH7-Sh-0Is"/>
+                                    <constraint firstAttribute="trailing" secondItem="hic-Dh-ptm" secondAttribute="trailing" id="deu-4I-nbW"/>
+                                    <constraint firstItem="hic-Dh-ptm" firstAttribute="top" secondItem="tDe-QK-Twx" secondAttribute="top" id="piL-kR-9Ia"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="D5m-Hw-JpO"/>
                     </items>
                 </toolbar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sl-EI-4nO" userLabel="Container View">

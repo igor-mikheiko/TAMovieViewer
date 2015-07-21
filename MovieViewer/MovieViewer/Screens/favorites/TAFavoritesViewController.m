@@ -18,6 +18,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Favorites";
+}
+
+#pragma mark - UITableViewDataSource
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
 }
 
 @end

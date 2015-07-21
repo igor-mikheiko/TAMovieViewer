@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 *instinctools. All rights reserved.
 //
 
-#import "TAViewController.h"
+#import "TATableViewController.h"
 
 @class TAWatchedViewModel;
 
 @protocol TAWatchedViewController <NSObject>
 
-@property (nonatomic, strong, readonly) TAWatchedViewModel *viewModel;
+@property (nonatomic, strong, readonly) TAWatchedViewModel<TATableViewModelProtocol> *viewModel;
 
 @end
 
-@interface TAWatchedViewController : TAViewController <TAWatchedViewController>
+@interface TAWatchedViewController : TATableViewController <TAWatchedViewController>
 
 @end

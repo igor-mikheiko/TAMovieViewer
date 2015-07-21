@@ -36,10 +36,8 @@
 		5684E37D1B5E272A0004DD14 /* TAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3361B5E272A0004DD14 /* TAViewController.m */; };
 		5684E37E1B5E272A0004DD14 /* TAViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3381B5E272A0004DD14 /* TAViewModel.m */; };
 		5684E37F1B5E272A0004DD14 /* TADiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E33C1B5E272A0004DD14 /* TADiscoveryViewController.m */; };
-		5684E3801B5E272A0004DD14 /* TADiscoveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E33D1B5E272A0004DD14 /* TADiscoveryViewController.xib */; };
 		5684E3811B5E272A0004DD14 /* TADiscoveryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E33F1B5E272A0004DD14 /* TADiscoveryViewModel.m */; };
 		5684E3821B5E272A0004DD14 /* TAFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3421B5E272A0004DD14 /* TAFavoritesViewController.m */; };
-		5684E3831B5E272A0004DD14 /* TAFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E3431B5E272A0004DD14 /* TAFavoritesViewController.xib */; };
 		5684E3841B5E272A0004DD14 /* TAFavoritesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3451B5E272A0004DD14 /* TAFavoritesViewModel.m */; };
 		5684E3851B5E272A0004DD14 /* TALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3481B5E272A0004DD14 /* TALoginViewController.m */; };
 		5684E3861B5E272A0004DD14 /* TALoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E3491B5E272A0004DD14 /* TALoginViewController.xib */; };
@@ -53,9 +51,11 @@
 		5684E38E1B5E272A0004DD14 /* TARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E35B1B5E272A0004DD14 /* TARootViewController.m */; };
 		5684E38F1B5E272A0004DD14 /* TARootViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E35D1B5E272A0004DD14 /* TARootViewModel.m */; };
 		5684E3901B5E272A0004DD14 /* TAWatchedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3601B5E272A0004DD14 /* TAWatchedViewController.m */; };
-		5684E3911B5E272A0004DD14 /* TAWatchedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E3611B5E272A0004DD14 /* TAWatchedViewController.xib */; };
 		5684E3921B5E272A0004DD14 /* TAWatchedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3631B5E272A0004DD14 /* TAWatchedViewModel.m */; };
 		5684E3941B5E274B0004DD14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3931B5E274B0004DD14 /* main.m */; };
+		5684E3981B5E42470004DD14 /* TATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3961B5E42470004DD14 /* TATableViewController.m */; };
+		5684E3991B5E42470004DD14 /* TATableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5684E3971B5E42470004DD14 /* TATableViewController.xib */; };
+		5684E3A01B5E46B10004DD14 /* TAMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E39E1B5E46B10004DD14 /* TAMovieCell.m */; };
 		56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D51B5C0F52005707AD /* Images.xcassets */; };
 		56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */; };
 		56D7F2E51B5C0F52005707AD /* MovieViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2E41B5C0F52005707AD /* MovieViewerTests.m */; };
@@ -131,12 +131,10 @@
 		5684E3381B5E272A0004DD14 /* TAViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAViewModel.m; sourceTree = "<group>"; };
 		5684E33B1B5E272A0004DD14 /* TADiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoveryViewController.h; sourceTree = "<group>"; };
 		5684E33C1B5E272A0004DD14 /* TADiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoveryViewController.m; sourceTree = "<group>"; };
-		5684E33D1B5E272A0004DD14 /* TADiscoveryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TADiscoveryViewController.xib; sourceTree = "<group>"; };
 		5684E33E1B5E272A0004DD14 /* TADiscoveryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoveryViewModel.h; sourceTree = "<group>"; };
 		5684E33F1B5E272A0004DD14 /* TADiscoveryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoveryViewModel.m; sourceTree = "<group>"; };
 		5684E3411B5E272A0004DD14 /* TAFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFavoritesViewController.h; sourceTree = "<group>"; };
 		5684E3421B5E272A0004DD14 /* TAFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFavoritesViewController.m; sourceTree = "<group>"; };
-		5684E3431B5E272A0004DD14 /* TAFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAFavoritesViewController.xib; sourceTree = "<group>"; };
 		5684E3441B5E272A0004DD14 /* TAFavoritesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFavoritesViewModel.h; sourceTree = "<group>"; };
 		5684E3451B5E272A0004DD14 /* TAFavoritesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFavoritesViewModel.m; sourceTree = "<group>"; };
 		5684E3471B5E272A0004DD14 /* TALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALoginViewController.h; sourceTree = "<group>"; };
@@ -160,10 +158,16 @@
 		5684E35D1B5E272A0004DD14 /* TARootViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARootViewModel.m; sourceTree = "<group>"; };
 		5684E35F1B5E272A0004DD14 /* TAWatchedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAWatchedViewController.h; sourceTree = "<group>"; };
 		5684E3601B5E272A0004DD14 /* TAWatchedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAWatchedViewController.m; sourceTree = "<group>"; };
-		5684E3611B5E272A0004DD14 /* TAWatchedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAWatchedViewController.xib; sourceTree = "<group>"; };
 		5684E3621B5E272A0004DD14 /* TAWatchedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAWatchedViewModel.h; sourceTree = "<group>"; };
 		5684E3631B5E272A0004DD14 /* TAWatchedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAWatchedViewModel.m; sourceTree = "<group>"; };
 		5684E3931B5E274B0004DD14 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5684E3951B5E42470004DD14 /* TATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATableViewController.h; sourceTree = "<group>"; };
+		5684E3961B5E42470004DD14 /* TATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATableViewController.m; sourceTree = "<group>"; };
+		5684E3971B5E42470004DD14 /* TATableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TATableViewController.xib; sourceTree = "<group>"; };
+		5684E39A1B5E42620004DD14 /* TATableViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATableViewModelProtocol.h; sourceTree = "<group>"; };
+		5684E39D1B5E46B10004DD14 /* TAMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMovieCell.h; sourceTree = "<group>"; };
+		5684E39E1B5E46B10004DD14 /* TAMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMovieCell.m; sourceTree = "<group>"; };
+		5684E3A21B5E46C70004DD14 /* TACellModelBindingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACellModelBindingProtocol.h; sourceTree = "<group>"; };
 		56D7F2C51B5C0F52005707AD /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D7F2C91B5C0F52005707AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D7F2D51B5C0F52005707AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -334,6 +338,10 @@
 				5684E3361B5E272A0004DD14 /* TAViewController.m */,
 				5684E3371B5E272A0004DD14 /* TAViewModel.h */,
 				5684E3381B5E272A0004DD14 /* TAViewModel.m */,
+				5684E3951B5E42470004DD14 /* TATableViewController.h */,
+				5684E3961B5E42470004DD14 /* TATableViewController.m */,
+				5684E3971B5E42470004DD14 /* TATableViewController.xib */,
+				5684E39A1B5E42620004DD14 /* TATableViewModelProtocol.h */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -356,7 +364,6 @@
 			children = (
 				5684E33B1B5E272A0004DD14 /* TADiscoveryViewController.h */,
 				5684E33C1B5E272A0004DD14 /* TADiscoveryViewController.m */,
-				5684E33D1B5E272A0004DD14 /* TADiscoveryViewController.xib */,
 				5684E33E1B5E272A0004DD14 /* TADiscoveryViewModel.h */,
 				5684E33F1B5E272A0004DD14 /* TADiscoveryViewModel.m */,
 			);
@@ -368,7 +375,6 @@
 			children = (
 				5684E3411B5E272A0004DD14 /* TAFavoritesViewController.h */,
 				5684E3421B5E272A0004DD14 /* TAFavoritesViewController.m */,
-				5684E3431B5E272A0004DD14 /* TAFavoritesViewController.xib */,
 				5684E3441B5E272A0004DD14 /* TAFavoritesViewModel.h */,
 				5684E3451B5E272A0004DD14 /* TAFavoritesViewModel.m */,
 			);
@@ -436,11 +442,28 @@
 			children = (
 				5684E35F1B5E272A0004DD14 /* TAWatchedViewController.h */,
 				5684E3601B5E272A0004DD14 /* TAWatchedViewController.m */,
-				5684E3611B5E272A0004DD14 /* TAWatchedViewController.xib */,
 				5684E3621B5E272A0004DD14 /* TAWatchedViewModel.h */,
 				5684E3631B5E272A0004DD14 /* TAWatchedViewModel.m */,
 			);
 			path = watched;
+			sourceTree = "<group>";
+		};
+		5684E39B1B5E46850004DD14 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5684E39C1B5E46940004DD14 /* Cells */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5684E39C1B5E46940004DD14 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5684E39D1B5E46B10004DD14 /* TAMovieCell.h */,
+				5684E39E1B5E46B10004DD14 /* TAMovieCell.m */,
+				5684E3A21B5E46C70004DD14 /* TACellModelBindingProtocol.h */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		56D7F2BC1B5C0F52005707AD = {
@@ -466,6 +489,7 @@
 		56D7F2C71B5C0F52005707AD /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				5684E39B1B5E46850004DD14 /* Presentation */,
 				5684E2F71B5E27290004DD14 /* Categories */,
 				5684E2FC1B5E27290004DD14 /* Logic */,
 				5684E3001B5E27290004DD14 /* Models */,
@@ -599,13 +623,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5684E3911B5E272A0004DD14 /* TAWatchedViewController.xib in Resources */,
+				5684E3991B5E42470004DD14 /* TATableViewController.xib in Resources */,
 				56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */,
 				5684E38B1B5E272A0004DD14 /* TAMenuViewController.xib in Resources */,
-				5684E3831B5E272A0004DD14 /* TAFavoritesViewController.xib in Resources */,
 				56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */,
 				5684E3891B5E272A0004DD14 /* TACentralViewController.xib in Resources */,
-				5684E3801B5E272A0004DD14 /* TADiscoveryViewController.xib in Resources */,
 				5684E3861B5E272A0004DD14 /* TALoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,6 +680,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5684E3761B5E272A0004DD14 /* TAWatchlistObject.m in Sources */,
+				5684E3A01B5E46B10004DD14 /* TAMovieCell.m in Sources */,
 				5684E37D1B5E272A0004DD14 /* TAViewController.m in Sources */,
 				5684E3901B5E272A0004DD14 /* TAWatchedViewController.m in Sources */,
 				5684E3921B5E272A0004DD14 /* TAWatchedViewModel.m in Sources */,
@@ -695,6 +718,7 @@
 				5684E3871B5E272A0004DD14 /* TALoginViewModel.m in Sources */,
 				5684E36B1B5E272A0004DD14 /* TAListResponseModel.m in Sources */,
 				5684E36A1B5E272A0004DD14 /* TAListItemResponseModel.m in Sources */,
+				5684E3981B5E42470004DD14 /* TATableViewController.m in Sources */,
 				5684E3821B5E272A0004DD14 /* TAFavoritesViewController.m in Sources */,
 				5684E3811B5E272A0004DD14 /* TADiscoveryViewModel.m in Sources */,
 				5684E3941B5E274B0004DD14 /* main.m in Sources */,

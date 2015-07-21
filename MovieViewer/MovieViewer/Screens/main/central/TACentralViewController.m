@@ -13,6 +13,7 @@
 @interface TACentralViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
 
@@ -38,6 +39,8 @@
         [self removeOldChildViewController:_childViewController];
         _childViewController = viewController;
         [self addNewChildViewController:viewController intoContainer:self.containerView];
+
+        self.titleLabel.text = _childViewController.title;
     }
 }
 

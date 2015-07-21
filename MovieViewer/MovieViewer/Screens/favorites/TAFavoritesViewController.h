@@ -7,15 +7,16 @@
 //
 
 #import "TAViewController.h"
+#import "TATableViewController.h"
 
 @class TAFavoritesViewModel;
 
 @protocol TAFavoritesViewController <NSObject>
 
-@property (nonatomic, strong, readonly) TAFavoritesViewModel *viewModel;
+@property (nonatomic, strong, readonly) TAFavoritesViewModel<TATableViewModelProtocol> *viewModel;
 
 @end
 
-@interface TAFavoritesViewController : TAViewController <TAFavoritesViewController>
+@interface TAFavoritesViewController : TATableViewController <TAFavoritesViewController>
 
 @end

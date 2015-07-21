@@ -7,7 +7,10 @@
 //
 
 #import "TAViewModel.h"
+#import "TATableViewModelProtocol.h"
 
-@interface TADiscoveryViewModel : TAViewModel
+@interface TADiscoveryViewModel : TAViewModel <TATableViewModelProtocol>
+
+@property (nonatomic, strong, readonly) NSArray *fetchedData;
 
 @end
