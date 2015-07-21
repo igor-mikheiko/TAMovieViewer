@@ -57,6 +57,8 @@
 		B4E710961B5DC049006E21A6 /* TAListResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E710951B5DC049006E21A6 /* TAListResponseModel.m */; };
 		B4E710991B5DC0CE006E21A6 /* TAListItemResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E710981B5DC0CE006E21A6 /* TAListItemResponseModel.m */; };
 		B4E7109C1B5DC286006E21A6 /* TAListChangedResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7109B1B5DC286006E21A6 /* TAListChangedResponseModel.m */; };
+		B4E710A01B5DC7C1006E21A6 /* TAServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E7109F1B5DC7C1006E21A6 /* TAServiceProvider.m */; };
+		B4E710A31B5DC860006E21A6 /* TAServiceRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E710A21B5DC860006E21A6 /* TAServiceRoutes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +167,11 @@
 		B4E710981B5DC0CE006E21A6 /* TAListItemResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAListItemResponseModel.m; sourceTree = "<group>"; };
 		B4E7109A1B5DC286006E21A6 /* TAListChangedResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAListChangedResponseModel.h; sourceTree = "<group>"; };
 		B4E7109B1B5DC286006E21A6 /* TAListChangedResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAListChangedResponseModel.m; sourceTree = "<group>"; };
+		B4E7109E1B5DC7C1006E21A6 /* TAServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAServiceProvider.h; sourceTree = "<group>"; };
+		B4E7109F1B5DC7C1006E21A6 /* TAServiceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAServiceProvider.m; sourceTree = "<group>"; };
+		B4E710A11B5DC860006E21A6 /* TAServiceRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAServiceRoutes.h; sourceTree = "<group>"; };
+		B4E710A21B5DC860006E21A6 /* TAServiceRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAServiceRoutes.m; sourceTree = "<group>"; };
+		B4E710A41B5DCDE7006E21A6 /* TANetworkModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TANetworkModels.h; sourceTree = "<group>"; };
 		D0ADB411BD28461562FFA885 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -374,6 +381,7 @@
 		56D7F2C71B5C0F52005707AD /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				B4E7109D1B5DC765006E21A6 /* ServiceProviders */,
 				B4E710901B5DBF2A006E21A6 /* Categories */,
 				B4E710661B5DB55D006E21A6 /* Models */,
 				5684E2E21B5DA55A0004DD14 /* Logic */,
@@ -442,6 +450,7 @@
 				B4E710981B5DC0CE006E21A6 /* TAListItemResponseModel.m */,
 				B4E7109A1B5DC286006E21A6 /* TAListChangedResponseModel.h */,
 				B4E7109B1B5DC286006E21A6 /* TAListChangedResponseModel.m */,
+				B4E710A41B5DCDE7006E21A6 /* TANetworkModels.h */,
 			);
 			path = NetworkModels;
 			sourceTree = "<group>";
@@ -478,6 +487,17 @@
 				5684E2F51B5E213A0004DD14 /* UIViewController+ChildViews.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		B4E7109D1B5DC765006E21A6 /* ServiceProviders */ = {
+			isa = PBXGroup;
+			children = (
+				B4E7109E1B5DC7C1006E21A6 /* TAServiceProvider.h */,
+				B4E7109F1B5DC7C1006E21A6 /* TAServiceProvider.m */,
+				B4E710A11B5DC860006E21A6 /* TAServiceRoutes.h */,
+				B4E710A21B5DC860006E21A6 /* TAServiceRoutes.m */,
+			);
+			path = ServiceProviders;
 			sourceTree = "<group>";
 		};
 		E8FF0E9C6CB57478FFF1C216 /* Pods */ = {
@@ -629,9 +649,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E710A31B5DC860006E21A6 /* TAServiceRoutes.m in Sources */,
 				5684E2E61B5DA58F0004DD14 /* TARouter.m in Sources */,
 				5684E2981B5D8AE50004DD14 /* TARootViewController.m in Sources */,
 				B4E7109C1B5DC286006E21A6 /* TAListChangedResponseModel.m in Sources */,
+				B4E710A01B5DC7C1006E21A6 /* TAServiceProvider.m in Sources */,
 				5684E2B91B5D96A50004DD14 /* TALoginViewModel.m in Sources */,
 				B4E7107B1B5DB55D006E21A6 /* TAFavoriteObject.m in Sources */,
 				B4E7107E1B5DB55D006E21A6 /* TAListItemObject.m in Sources */,
