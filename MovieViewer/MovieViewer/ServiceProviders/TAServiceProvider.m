@@ -14,6 +14,7 @@
 #import "TADiscoverResponseModel.h"
 #import "TAListResponseModel.h"
 #import "TAListChangedResponseModel.h"
+#import "TAUserAuthInfo.h"
 
 @implementation TAServiceProvider
 
@@ -41,4 +42,15 @@
              };
 }
 
+#pragma mark - Auth
+
+
+#pragma mark - Discover
+
+#pragma mark - Favorite
+
+#pragma mark - Watchlist
+
+
 @end
+

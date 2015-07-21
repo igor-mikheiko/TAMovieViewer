@@ -57,6 +57,12 @@
 		56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D51B5C0F52005707AD /* Images.xcassets */; };
 		56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */; };
 		56D7F2E51B5C0F52005707AD /* MovieViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2E41B5C0F52005707AD /* MovieViewerTests.m */; };
+		F87B401B19568AAC5584FCE2 /* TAAddWatchlistRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4FB2A5B883FE7E75B6C2 /* TAAddWatchlistRequestModel.m */; };
+		F87B40BC0B68E6AA8FA383BC /* TAUserAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4E42E36B9F37C5574468 /* TAUserAuthInfo.m */; };
+		F87B41263BCD66B2D9029C6B /* TAWatchlistRequestParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B48916DB7F5E8EB6A9B89 /* TAWatchlistRequestParametersModel.m */; };
+		F87B4349E758E49A3B00EC90 /* TAFavoriteListRequestParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4C66FBBACE18B30335C2 /* TAFavoriteListRequestParametersModel.m */; };
+		F87B45DE1291A6CD296FA321 /* TAAddFavoriteRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4CE66ACAA6AC9C9F6B2C /* TAAddFavoriteRequestModel.m */; };
+		F87B464CF2280C5A831D1B3E /* TADiscoverRequestParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4301075A0CC9D440722F /* TADiscoverRequestParametersModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +177,18 @@
 		56D7F2E41B5C0F52005707AD /* MovieViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewerTests.m; sourceTree = "<group>"; };
 		9DE867138158BA20BE0672B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0ADB411BD28461562FFA885 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F87B4301075A0CC9D440722F /* TADiscoverRequestParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoverRequestParametersModel.m; sourceTree = "<group>"; };
+		F87B432CE2711C9D6F15D342 /* TAFavoriteListRequestParametersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFavoriteListRequestParametersModel.h; sourceTree = "<group>"; };
+		F87B44BE4E7A25C4CDE89FE3 /* TAAddWatchlistRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddWatchlistRequestModel.h; sourceTree = "<group>"; };
+		F87B465D779FAD67455094A1 /* TAWatchlistRequestParametersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAWatchlistRequestParametersModel.h; sourceTree = "<group>"; };
+		F87B48916DB7F5E8EB6A9B89 /* TAWatchlistRequestParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAWatchlistRequestParametersModel.m; sourceTree = "<group>"; };
+		F87B4B6F263112B1E881A373 /* TAUserAuthInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAUserAuthInfo.h; sourceTree = "<group>"; };
+		F87B4C66FBBACE18B30335C2 /* TAFavoriteListRequestParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFavoriteListRequestParametersModel.m; sourceTree = "<group>"; };
+		F87B4CE66ACAA6AC9C9F6B2C /* TAAddFavoriteRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddFavoriteRequestModel.m; sourceTree = "<group>"; };
+		F87B4E14952637601577B68D /* TADiscoverRequestParametersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoverRequestParametersModel.h; sourceTree = "<group>"; };
+		F87B4E42E36B9F37C5574468 /* TAUserAuthInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAUserAuthInfo.m; sourceTree = "<group>"; };
+		F87B4E5D25D3358BB4E5DCD6 /* TAAddFavoriteRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddFavoriteRequestModel.h; sourceTree = "<group>"; };
+		F87B4FB2A5B883FE7E75B6C2 /* TAAddWatchlistRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddWatchlistRequestModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +275,18 @@
 				5684E3101B5E272A0004DD14 /* TANewTokenResponseModel.m */,
 				5684E3111B5E272A0004DD14 /* TAValidateResponseModel.h */,
 				5684E3121B5E272A0004DD14 /* TAValidateResponseModel.m */,
+				F87B4E42E36B9F37C5574468 /* TAUserAuthInfo.m */,
+				F87B4B6F263112B1E881A373 /* TAUserAuthInfo.h */,
+				F87B4301075A0CC9D440722F /* TADiscoverRequestParametersModel.m */,
+				F87B4E14952637601577B68D /* TADiscoverRequestParametersModel.h */,
+				F87B4C66FBBACE18B30335C2 /* TAFavoriteListRequestParametersModel.m */,
+				F87B432CE2711C9D6F15D342 /* TAFavoriteListRequestParametersModel.h */,
+				F87B48916DB7F5E8EB6A9B89 /* TAWatchlistRequestParametersModel.m */,
+				F87B465D779FAD67455094A1 /* TAWatchlistRequestParametersModel.h */,
+				F87B4FB2A5B883FE7E75B6C2 /* TAAddWatchlistRequestModel.m */,
+				F87B44BE4E7A25C4CDE89FE3 /* TAAddWatchlistRequestModel.h */,
+				F87B4CE66ACAA6AC9C9F6B2C /* TAAddFavoriteRequestModel.m */,
+				F87B4E5D25D3358BB4E5DCD6 /* TAAddFavoriteRequestModel.h */,
 			);
 			path = NetworkModels;
 			sourceTree = "<group>";
@@ -711,6 +741,12 @@
 				5684E3811B5E272A0004DD14 /* TADiscoveryViewModel.m in Sources */,
 				5684E3941B5E274B0004DD14 /* main.m in Sources */,
 				5684E37A1B5E272A0004DD14 /* TAViewModelsAssembly.m in Sources */,
+				F87B40BC0B68E6AA8FA383BC /* TAUserAuthInfo.m in Sources */,
+				F87B464CF2280C5A831D1B3E /* TADiscoverRequestParametersModel.m in Sources */,
+				F87B4349E758E49A3B00EC90 /* TAFavoriteListRequestParametersModel.m in Sources */,
+				F87B41263BCD66B2D9029C6B /* TAWatchlistRequestParametersModel.m in Sources */,
+				F87B401B19568AAC5584FCE2 /* TAAddWatchlistRequestModel.m in Sources */,
+				F87B45DE1291A6CD296FA321 /* TAAddFavoriteRequestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
