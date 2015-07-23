@@ -27,6 +27,8 @@
 		<string>TAApplicationAssembly</string>
 		<string>TAViewsAssembly</string>
 		<string>TAViewModelsAssembly</string>
+		<string>TAFacadesAssembly</string>
+		<string>TAServicesAssembly</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

@@ -57,6 +57,10 @@
 		56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D51B5C0F52005707AD /* Images.xcassets */; };
 		56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */; };
 		56D7F2E51B5C0F52005707AD /* MovieViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2E41B5C0F52005707AD /* MovieViewerTests.m */; };
+		56E3645B1B60CB7900908459 /* TALoginFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3645A1B60CB7900908459 /* TALoginFacade.m */; };
+		56E3645E1B60CB8800908459 /* TAFacadeAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3645D1B60CB8800908459 /* TAFacadeAbstract.m */; };
+		56E364611B60CBFF00908459 /* TAFacadesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E364601B60CBFF00908459 /* TAFacadesAssembly.m */; };
+		56E364641B60CCEF00908459 /* TAServicesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E364631B60CCEF00908459 /* TAServicesAssembly.m */; };
 		F87B401B19568AAC5584FCE2 /* TAAddWatchlistRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4FB2A5B883FE7E75B6C2 /* TAAddWatchlistRequestModel.m */; };
 		F87B40BC0B68E6AA8FA383BC /* TAUserAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4E42E36B9F37C5574468 /* TAUserAuthInfo.m */; };
 		F87B41263BCD66B2D9029C6B /* TAWatchlistRequestParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B48916DB7F5E8EB6A9B89 /* TAWatchlistRequestParametersModel.m */; };
@@ -175,6 +179,14 @@
 		56D7F2DE1B5C0F52005707AD /* MovieViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D7F2E31B5C0F52005707AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D7F2E41B5C0F52005707AD /* MovieViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewerTests.m; sourceTree = "<group>"; };
+		56E364591B60CB7900908459 /* TALoginFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TALoginFacade.h; sourceTree = "<group>"; };
+		56E3645A1B60CB7900908459 /* TALoginFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TALoginFacade.m; sourceTree = "<group>"; };
+		56E3645C1B60CB8800908459 /* TAFacadeAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFacadeAbstract.h; sourceTree = "<group>"; };
+		56E3645D1B60CB8800908459 /* TAFacadeAbstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFacadeAbstract.m; sourceTree = "<group>"; };
+		56E3645F1B60CBFF00908459 /* TAFacadesAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFacadesAssembly.h; sourceTree = "<group>"; };
+		56E364601B60CBFF00908459 /* TAFacadesAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFacadesAssembly.m; sourceTree = "<group>"; };
+		56E364621B60CCEF00908459 /* TAServicesAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAServicesAssembly.h; sourceTree = "<group>"; };
+		56E364631B60CCEF00908459 /* TAServicesAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAServicesAssembly.m; sourceTree = "<group>"; };
 		9DE867138158BA20BE0672B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0ADB411BD28461562FFA885 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F87B4301075A0CC9D440722F /* TADiscoverRequestParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoverRequestParametersModel.m; sourceTree = "<group>"; };
@@ -347,6 +359,10 @@
 				5684E32F1B5E272A0004DD14 /* TAViewModelsAssembly.m */,
 				5684E3301B5E272A0004DD14 /* TAViewsAssembly.h */,
 				5684E3311B5E272A0004DD14 /* TAViewsAssembly.m */,
+				56E3645F1B60CBFF00908459 /* TAFacadesAssembly.h */,
+				56E364601B60CBFF00908459 /* TAFacadesAssembly.m */,
+				56E364621B60CCEF00908459 /* TAServicesAssembly.h */,
+				56E364631B60CCEF00908459 /* TAServicesAssembly.m */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -509,13 +525,14 @@
 		56D7F2C71B5C0F52005707AD /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				5684E32A1B5E272A0004DD14 /* App */,
+				56E364581B60CB3800908459 /* Facades */,
 				5684E39B1B5E46850004DD14 /* Presentation */,
 				5684E2F71B5E27290004DD14 /* Categories */,
 				5684E2FC1B5E27290004DD14 /* Logic */,
 				5684E3001B5E27290004DD14 /* Models */,
 				5684E3241B5E272A0004DD14 /* Resources */,
 				5684E3251B5E272A0004DD14 /* ServiceProviders */,
-				5684E32A1B5E272A0004DD14 /* App */,
 				5684E3341B5E272A0004DD14 /* Basics */,
 				5684E3391B5E272A0004DD14 /* Screens */,
 				56D7F2D51B5C0F52005707AD /* Images.xcassets */,
@@ -550,6 +567,17 @@
 				56D7F2E31B5C0F52005707AD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56E364581B60CB3800908459 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				56E364591B60CB7900908459 /* TALoginFacade.h */,
+				56E3645A1B60CB7900908459 /* TALoginFacade.m */,
+				56E3645C1B60CB8800908459 /* TAFacadeAbstract.h */,
+				56E3645D1B60CB8800908459 /* TAFacadeAbstract.m */,
+			);
+			path = Facades;
 			sourceTree = "<group>";
 		};
 		E8FF0E9C6CB57478FFF1C216 /* Pods */ = {
@@ -727,6 +755,7 @@
 				5684E38D1B5E272A0004DD14 /* TAMainViewController.m in Sources */,
 				5684E3881B5E272A0004DD14 /* TACentralViewController.m in Sources */,
 				5684E38E1B5E272A0004DD14 /* TARootViewController.m in Sources */,
+				56E3645E1B60CB8800908459 /* TAFacadeAbstract.m in Sources */,
 				5684E3661B5E272A0004DD14 /* TARouter.m in Sources */,
 				5684E37B1B5E272A0004DD14 /* TAViewsAssembly.m in Sources */,
 				5684E36E1B5E272A0004DD14 /* TAValidateResponseModel.m in Sources */,
@@ -734,14 +763,17 @@
 				5684E36C1B5E272A0004DD14 /* TANewSessionResponseModel.m in Sources */,
 				5684E3841B5E272A0004DD14 /* TAFavoritesViewModel.m in Sources */,
 				5684E3871B5E272A0004DD14 /* TALoginViewModel.m in Sources */,
+				56E364641B60CCEF00908459 /* TAServicesAssembly.m in Sources */,
 				5684E36B1B5E272A0004DD14 /* TAListResponseModel.m in Sources */,
 				5684E36A1B5E272A0004DD14 /* TAListItemResponseModel.m in Sources */,
 				5684E3981B5E42470004DD14 /* TATableViewController.m in Sources */,
 				5684E3821B5E272A0004DD14 /* TAFavoritesViewController.m in Sources */,
+				56E364611B60CBFF00908459 /* TAFacadesAssembly.m in Sources */,
 				5684E3811B5E272A0004DD14 /* TADiscoveryViewModel.m in Sources */,
 				5684E3941B5E274B0004DD14 /* main.m in Sources */,
 				5684E37A1B5E272A0004DD14 /* TAViewModelsAssembly.m in Sources */,
 				F87B40BC0B68E6AA8FA383BC /* TAUserAuthInfo.m in Sources */,
+				56E3645B1B60CB7900908459 /* TALoginFacade.m in Sources */,
 				F87B464CF2280C5A831D1B3E /* TADiscoverRequestParametersModel.m in Sources */,
 				F87B4349E758E49A3B00EC90 /* TAFavoriteListRequestParametersModel.m in Sources */,
 				F87B41263BCD66B2D9029C6B /* TAWatchlistRequestParametersModel.m in Sources */,

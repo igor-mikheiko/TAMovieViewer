@@ -10,7 +10,6 @@
 #import "TACellModelBindingProtocol.h"
 #import "TADiscoverItemObject.h"
 
-
 @interface TAMovieCell : UITableViewCell <TACellModelBindingProtocol>
 
 - (void)bindWithModel:(TADiscoverItemObject *)model;
