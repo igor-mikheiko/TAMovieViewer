@@ -7,6 +7,8 @@
 //
 
 #import "TALoginViewModel.h"
+#import "TAErrors.h"
+#import "TALoginFacade.h"
 
 @implementation TALoginViewModel
 @synthesize viewDelegate;
@@ -23,18 +25,43 @@
 
 - (void)performLoginAction
 {
-    if (self.loginString.length == 0 || self.passwordString.length == 0) {
-        DDLogVerbose(@"Login failed");
-        [self.viewDelegate loginActionFailedWithError:nil];
-    } else {
-        DDLogVerbose(@"Login successfull");
-        [self.viewDelegate loginActionSuccessed];
-
+    void(^afterSuccess)(void) = ^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.7f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.router presentMainScreen:^{
             }];
         });
+    };
+
+    [self.viewDelegate loginActionSuccessed];
+    BLOCK_EXEC(afterSuccess)
+    return;
+
+
+    if (self.loginString.length == 0 || self.passwordString.length == 0) {
+        NSError *error = [NSError errorWithDomain:TAMakeAppDomain(@"loginViewModel") code:1 userInfo:@{ NSLocalizedDescriptionKey: @"Too short parameters" }];
+        DDLogVerbose(@"Login failed::%@", [error localizedDescription]);
+        [self.viewDelegate loginActionFailedWithError:error];
+    } else {
+        if ([self.facade isAlreadyAuthenticated]) {
+            DDLogVerbose(@"Login successfull (already exists)");
+            [self.viewDelegate loginActionSuccessed];
+            BLOCK_EXEC(afterSuccess)
+        } else {
+            [self.facade authenticateWithUsername:self.loginString password:self.passwordString success:^{
+                DDLogVerbose(@"Login successfull (request)");
+                [self.viewDelegate loginActionSuccessed];
+                BLOCK_EXEC(afterSuccess)
+            } failure:^(NSError *error) {
+                DDLogVerbose(@"Login failed::%@", [error localizedDescription]);
+                [self.viewDelegate loginActionFailedWithError:error];
+            }];
+        }
     }
+}
+
+- (void)performRegistrationAction
+{
+    [self.facade registerNewUser];
 }
 
 @end

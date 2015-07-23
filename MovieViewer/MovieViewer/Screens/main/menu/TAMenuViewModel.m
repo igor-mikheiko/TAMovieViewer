@@ -7,6 +7,7 @@
 //
 
 #import "TAMenuViewModel.h"
+#import "TALoginFacade.h"
 
 @implementation TAMenuViewModel
 
@@ -32,8 +33,7 @@
 
 - (void)performLogOutAction
 {
-    //TODO: logout
-
+    [self.loginFacade logout];
     [self.router presentLoginScreen:^{
 
     }];

@@ -8,7 +8,11 @@
 
 #import "TAViewModel.h"
 
+@class TALoginFacade;
+
 @interface TAMenuViewModel : TAViewModel
+
+@property (nonatomic) TALoginFacade *loginFacade;
 
 - (void)performShowDiscovery;
 

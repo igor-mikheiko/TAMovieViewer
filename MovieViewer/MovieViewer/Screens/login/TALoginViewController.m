@@ -42,7 +42,7 @@
 
 - (IBAction)registrationAction:(id)sender
 {
-
+    [self.viewModel performRegistrationAction];
 }
 
 #pragma mark - TALoginViewDelegate
