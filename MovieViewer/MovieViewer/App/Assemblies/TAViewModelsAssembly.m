@@ -8,6 +8,7 @@
 
 #import "TAViewModelsAssembly.h"
 #import "TAApplicationAssembly.h"
+#import "TAFacadesAssembly.h"
 #import "TARootViewModel.h"
 #import "TALoginViewModel.h"
 #import "TADiscoveryViewModel.h"
@@ -28,6 +29,7 @@
 {
     return [TyphoonDefinition withClass:[TAMenuViewModel class] configuration:^(TyphoonDefinition *definition) {
         definition.parent = [self _basicViewModel];
+        [definition injectProperty:@selector(loginFacade) with:[self.facadesAssembly loginFacade]];
     }];
 }
 
@@ -35,6 +37,7 @@
 {
     return [TyphoonDefinition withClass:[TALoginViewModel class] configuration:^(TyphoonDefinition *definition) {
         definition.parent = [self _basicViewModel];
+        [definition injectProperty:@selector(facade) with:[self.facadesAssembly loginFacade]];
     }];
 }
 

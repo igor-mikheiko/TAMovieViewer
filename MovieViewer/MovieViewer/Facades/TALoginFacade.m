@@ -11,6 +11,7 @@
 #import "TANewSessionResponseModel.h"
 #import "TAErrors.h"
 
+
 @implementation TALoginFacade {
     NSString *_requestToken;
     NSString *_sessionId;
@@ -35,7 +36,7 @@
                     BLOCK_EXEC(success)
                 }
             } andErrorBlock:^(NSError *error) {
-                NSError *loginError = [NSError errorWithDomain:TAMakeAppDomain(TALoginFacadeError) code:error.code userInfo:error.userInfo];
+                NSError *loginError = [NSError errorWithUnderlyingError:error domain:TAMakeAppDomain(TALoginFacadeError) code:error.code userInfo:error.userInfo];
                 BLOCK_EXEC(failure, loginError)
             }];
         } else {
@@ -43,7 +44,7 @@
             BLOCK_EXEC(failure, error)
         }
     } andErrorBlock:^(NSError *error) {
-        NSError *loginError = [NSError errorWithDomain:TAMakeAppDomain(TALoginFacadeError) code:error.code userInfo:error.userInfo];
+        NSError *loginError = [NSError errorWithUnderlyingError:error domain:TAMakeAppDomain(TALoginFacadeError) code:1 userInfo:nil];
         BLOCK_EXEC(failure, loginError);
     }];
 }

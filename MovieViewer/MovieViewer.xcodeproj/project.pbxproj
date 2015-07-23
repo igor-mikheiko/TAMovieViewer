@@ -63,6 +63,8 @@
 		56E364641B60CCEF00908459 /* TAServicesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E364631B60CCEF00908459 /* TAServicesAssembly.m */; };
 		56E364671B60D39200908459 /* TAErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E364661B60D39200908459 /* TAErrors.m */; };
 		56E3646A1B60D39E00908459 /* TAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E364691B60D39E00908459 /* TAConstants.m */; };
+		56E3646D1B611E9400908459 /* TADiscoveryFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3646C1B611E9400908459 /* TADiscoveryFacade.m */; };
+		56E364701B61229200908459 /* NSError+EmbeddedError.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3646F1B61229200908459 /* NSError+EmbeddedError.m */; };
 		F87B401B19568AAC5584FCE2 /* TAAddWatchlistRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4FB2A5B883FE7E75B6C2 /* TAAddWatchlistRequestModel.m */; };
 		F87B40BC0B68E6AA8FA383BC /* TAUserAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4E42E36B9F37C5574468 /* TAUserAuthInfo.m */; };
 		F87B41263BCD66B2D9029C6B /* TAWatchlistRequestParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B48916DB7F5E8EB6A9B89 /* TAWatchlistRequestParametersModel.m */; };
@@ -193,6 +195,10 @@
 		56E364661B60D39200908459 /* TAErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAErrors.m; sourceTree = "<group>"; };
 		56E364681B60D39E00908459 /* TAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAConstants.h; sourceTree = "<group>"; };
 		56E364691B60D39E00908459 /* TAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAConstants.m; sourceTree = "<group>"; };
+		56E3646B1B611E9400908459 /* TADiscoveryFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoveryFacade.h; sourceTree = "<group>"; };
+		56E3646C1B611E9400908459 /* TADiscoveryFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoveryFacade.m; sourceTree = "<group>"; };
+		56E3646E1B61229200908459 /* NSError+EmbeddedError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+EmbeddedError.h"; sourceTree = "<group>"; };
+		56E3646F1B61229200908459 /* NSError+EmbeddedError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+EmbeddedError.m"; sourceTree = "<group>"; };
 		9DE867138158BA20BE0672B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0ADB411BD28461562FFA885 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F87B4301075A0CC9D440722F /* TADiscoverRequestParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoverRequestParametersModel.m; sourceTree = "<group>"; };
@@ -243,6 +249,8 @@
 				5684E2F91B5E27290004DD14 /* NSDateFormatter+TADateFormatters.m */,
 				5684E2FA1B5E27290004DD14 /* UIViewController+ChildViews.h */,
 				5684E2FB1B5E27290004DD14 /* UIViewController+ChildViews.m */,
+				56E3646E1B61229200908459 /* NSError+EmbeddedError.h */,
+				56E3646F1B61229200908459 /* NSError+EmbeddedError.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -586,6 +594,8 @@
 				56E3645A1B60CB7900908459 /* TALoginFacade.m */,
 				56E3645C1B60CB8800908459 /* TAFacadeAbstract.h */,
 				56E3645D1B60CB8800908459 /* TAFacadeAbstract.m */,
+				56E3646B1B611E9400908459 /* TADiscoveryFacade.h */,
+				56E3646C1B611E9400908459 /* TADiscoveryFacade.m */,
 			);
 			path = Facades;
 			sourceTree = "<group>";
@@ -765,6 +775,7 @@
 				5684E3681B5E272A0004DD14 /* TADiscoverResponseModel.m in Sources */,
 				5684E38D1B5E272A0004DD14 /* TAMainViewController.m in Sources */,
 				5684E3881B5E272A0004DD14 /* TACentralViewController.m in Sources */,
+				56E364701B61229200908459 /* NSError+EmbeddedError.m in Sources */,
 				5684E38E1B5E272A0004DD14 /* TARootViewController.m in Sources */,
 				56E3645E1B60CB8800908459 /* TAFacadeAbstract.m in Sources */,
 				5684E3661B5E272A0004DD14 /* TARouter.m in Sources */,
@@ -772,6 +783,7 @@
 				5684E36E1B5E272A0004DD14 /* TAValidateResponseModel.m in Sources */,
 				5684E36F1B5E272A0004DD14 /* TADiscoverItemObject.m in Sources */,
 				5684E36C1B5E272A0004DD14 /* TANewSessionResponseModel.m in Sources */,
+				56E3646D1B611E9400908459 /* TADiscoveryFacade.m in Sources */,
 				5684E3841B5E272A0004DD14 /* TAFavoritesViewModel.m in Sources */,
 				5684E3871B5E272A0004DD14 /* TALoginViewModel.m in Sources */,
 				56E364671B60D39200908459 /* TAErrors.m in Sources */,

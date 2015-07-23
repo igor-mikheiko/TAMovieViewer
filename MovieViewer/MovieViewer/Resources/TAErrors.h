@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSError+EmbeddedError.h"
 
 static inline NSString *TAMakeAppDomain(NSString *appendix)
 {
@@ -14,6 +15,7 @@ static inline NSString *TAMakeAppDomain(NSString *appendix)
 }
 
 FOUNDATION_EXPORT NSString *const TALoginFacadeError;
+FOUNDATION_EXPORT NSString *const TADiscoveryFacadeError;
 
 typedef NS_ENUM(NSUInteger, TALoginError) {
     TALoginErrorParameters,

@@ -7,9 +7,10 @@
 //
 
 #import "TAFacadesAssembly.h"
+#import "TAServicesAssembly.h"
 #import "TAFacadeAbstract.h"
 #import "TALoginFacade.h"
-#import "TAServicesAssembly.h"
+#import "TADiscoveryFacade.h"
 
 @implementation TAFacadesAssembly
 
@@ -24,6 +25,15 @@
 {
     return [TyphoonDefinition withClass:[TALoginFacade class] configuration:^(TyphoonDefinition *definition) {
         definition.parent = [self _basicFacade];
+        definition.scope = TyphoonScopeSingleton;
+    }];
+}
+
+- (TADiscoveryFacade *)discoveryFacade
+{
+    return [TyphoonDefinition withClass:[TADiscoveryFacade class] configuration:^(TyphoonDefinition *definition) {
+        definition.parent = [self _basicFacade];
+        [definition injectProperty:@selector(loginFacade) with:[self loginFacade]];
     }];
 }
 

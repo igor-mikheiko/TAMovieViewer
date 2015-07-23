@@ -9,3 +9,4 @@
 #import "TAErrors.h"
 
 NSString *const TALoginFacadeError = @"loginFacade";
+NSString *const TADiscoveryFacadeError = @"discoveryMovie";

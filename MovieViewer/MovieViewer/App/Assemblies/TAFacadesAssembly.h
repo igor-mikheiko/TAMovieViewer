@@ -9,11 +9,14 @@
 #import "TyphoonAssembly.h"
 
 @class TAServicesAssembly,
-TALoginFacade;
+TALoginFacade,
+TADiscoveryFacade;
 
 @protocol TAFacadesDataSource <NSObject>
 
 - (TALoginFacade *)loginFacade;
+
+- (TADiscoveryFacade *)discoveryFacade;
 
 @end
 
