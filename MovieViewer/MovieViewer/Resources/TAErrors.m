@@ -9,4 +9,6 @@
 #import "TAErrors.h"
 
 NSString *const TALoginFacadeError = @"loginFacade";
-NSString *const TADiscoveryFacadeError = @"discoveryMovie";
+NSString *const TADiscoveryFacadeError = @"discoveryMoviesFacade";
+NSString *const TAFavoritesMoviesFacadeError = @"favoritesMoviesFacade";
+NSString *const TAWatchedMoviesFacadeError = @"watchedMoviesFacade";
