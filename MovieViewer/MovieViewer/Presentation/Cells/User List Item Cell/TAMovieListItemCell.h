@@ -12,6 +12,6 @@
 
 @interface TAMovieListItemCell : UITableViewCell <TACellModelBindingProtocol, TAMovieListItemViewDelegate>
 
-- (void)bindWithModel:(TAMovieListItemViewModel *)model
+- (void)bindWithModel:(TAMovieListItemViewModel *)model;
 
 @end

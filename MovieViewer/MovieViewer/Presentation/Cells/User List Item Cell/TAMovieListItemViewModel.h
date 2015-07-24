@@ -21,7 +21,7 @@
 
 @property (nonatomic, weak) NSObject<TAMovieListItemViewDelegate> *viewDelegate;
 
-@property (nonatomic, weak) NSObject<TAMovieListItemViewDelegate> *actionDelegate;
+@property (nonatomic, weak) NSObject<TAMovieListItemActionDelegate> *actionDelegate;
 
 @property (nonatomic, readonly) NSString *title;
 
