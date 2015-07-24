@@ -8,15 +8,19 @@
 
 #import "TAFacadeAbstract.h"
 #import "TAUserAuthInfo.h"
+#import "TAUserProfile.h"
 
 FOUNDATION_IMPORT NSString *const TAUserLogoutNotificationName;
 
 typedef void(^ta_login_success_block)(void);
 typedef void(^ta_login_failure_block)(NSError *error);
+typedef void(^ta_login_check)(BOOL isAuthorized);
 
 @interface TALoginFacade : TAFacadeAbstract
 
-- (BOOL)isAlreadyAuthenticated;
+@property (nonatomic, copy, readonly) TAUserProfile *user;
+
+- (void)checkUserAuthorization:(ta_login_check)checkCompletion;
 
 - (void)authenticateWithUsername:(NSString *)username password:(NSString *)password success:(ta_login_success_block)success failure:(ta_login_failure_block)failure;
 

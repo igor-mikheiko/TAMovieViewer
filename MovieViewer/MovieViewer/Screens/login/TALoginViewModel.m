@@ -42,20 +42,22 @@
         DDLogVerbose(@"Login failed::%@", [error localizedDescription]);
         [self.viewDelegate loginActionFailedWithError:error];
     } else {
-        if ([self.facade isAlreadyAuthenticated]) {
-            DDLogVerbose(@"Login successfull (already exists)");
-            [self.viewDelegate loginActionSuccessed];
-            BLOCK_EXEC(afterSuccess)
-        } else {
-            [self.facade authenticateWithUsername:self.loginString password:self.passwordString success:^{
-                DDLogVerbose(@"Login successfull (request)");
+        [self.facade checkUserAuthorization:^(BOOL isAuthorized) {
+            if (isAuthorized) {
+                DDLogVerbose(@"Login successfull (already exists)");
                 [self.viewDelegate loginActionSuccessed];
                 BLOCK_EXEC(afterSuccess)
-            } failure:^(NSError *error) {
-                DDLogVerbose(@"Login failed::%@", [error localizedDescription]);
-                [self.viewDelegate loginActionFailedWithError:error];
-            }];
-        }
+            } else {
+                [self.facade authenticateWithUsername:self.loginString password:self.passwordString success:^{
+                    DDLogVerbose(@"Login successfull (request)");
+                    [self.viewDelegate loginActionSuccessed];
+                    BLOCK_EXEC(afterSuccess)
+                } failure:^(NSError *error) {
+                    DDLogVerbose(@"Login failed::%@", [error localizedDescription]);
+                    [self.viewDelegate loginActionFailedWithError:error];
+                }];
+            }
+        }];
     }
 }
 

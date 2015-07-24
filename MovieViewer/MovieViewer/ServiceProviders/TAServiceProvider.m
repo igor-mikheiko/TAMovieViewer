@@ -44,6 +44,7 @@ NSString *const kParameterFavoriteKey = @"favorite";
 {
     self = [super initWithBaseURL:[NSURL URLWithString:TABaseServicePath]];
     if (self) {
+        [self.reachabilityManager startMonitoring];
     }
     return self;
 }
