@@ -11,8 +11,8 @@
 #import "TANewTokenResponseModel.h"
 #import "TAValidateResponseModel.h"
 #import "TANewSessionResponseModel.h"
-#import "TADiscoverResponseModel.h"
-#import "TAListResponseModel.h"
+#import "TADiscoveryObject.h"
+#import "TAListResponseObject.h"
 #import "TAListChangedResponseModel.h"
 #import "TAUserAuthInfo.h"
 
@@ -32,12 +32,12 @@
              TAAuthValidateLogin : [TAValidateResponseModel class],
              TAAuthSessionNew : [TANewSessionResponseModel class],
              
-             TADiscoverMovie : [TADiscoverResponseModel class],
+             TADiscoverMovie : [TADiscoveryObject class],
              
-             TAAccountFavoriteMovies : [TAListResponseModel class],
+             TAAccountFavoriteMovies : [TAListResponseObject class],
              TAAccountChangeFavorite : [TAListChangedResponseModel class],
              
-             TAAccountWatchlistMovies : [TAListResponseModel class],
+             TAAccountWatchlistMovies : [TAListResponseObject class],
              TAAccountChangeWatchlist : [TAListChangedResponseModel class]
              };
 }

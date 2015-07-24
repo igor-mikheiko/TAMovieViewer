@@ -7,14 +7,24 @@
 //
 
 #import "TADiscoveryObject.h"
+#import <Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h>
+#import "TADiscoverItemObject.h"
 
 @implementation TADiscoveryObject
 
-+ (NSDictionary *) JSONInboundMappingDictionary{
-    return @{@"page" : @"page",
-             @"results" : @"results",
-             @"total_pages" : @"totalPages",
-             @"total_results" : @"totalResults"};
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
+    return @{
+             @"page": @"page",
+             @"results": @"results",
+             @"totalPages": @"total_pages",
+             @"totalResults": @"total_results"
+             };
+}
+
++ (NSValueTransformer *)resultsJSONTransformer
+{
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[TADiscoverItemObject class]];
 }
 
 @end

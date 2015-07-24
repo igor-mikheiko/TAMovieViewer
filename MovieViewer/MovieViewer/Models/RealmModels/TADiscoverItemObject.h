@@ -9,8 +9,9 @@
 #import "RLMObject.h"
 #import "RLMArray.h"
 #import "TAIntegerObject.h"
+#import <Mantle/MTLJSONAdapter.h>
 
-@interface TADiscoverItemObject : RLMObject
+@interface TADiscoverItemObject : RLMObject <MTLJSONSerializing>
 
 @property BOOL adult;
 @property NSString *backdropPath;

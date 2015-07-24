@@ -9,7 +9,7 @@
 #import "TAWatchedMoviesFacade.h"
 #import "TALoginFacade.h"
 #import "TAWatchlistRequestParametersModel.h"
-#import "TAListResponseModel.h"
+#import "TAListResponseObject.h"
 #import "TAErrors.h"
 #import "TAConstants.h"
 
@@ -38,7 +38,7 @@ static NSUInteger const kTotalPagesUndefined = NSUIntegerMax;
     if ([self.loginFacade isAlreadyAuthenticated]) {
         TAWatchlistRequestParametersModel *parameters = [TAWatchlistRequestParametersModel new];
         parameters.page = page;
-        [self.serviceProvider getWatchlistWithParameters:parameters withSuccess:^(TAListResponseModel *response) {
+        [self.serviceProvider getWatchlistWithParameters:parameters withSuccess:^(TAListResponseObject *response) {
             _totalPages = response.totalPages;
             BLOCK_EXEC(success, response.results);
         } andErrorBlock:^(NSError *error) {

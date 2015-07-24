@@ -7,8 +7,9 @@
 //
 
 #import "RLMObject.h"
+#import <Mantle/MTLJSONAdapter.h>
 
-@interface TAListItemObject : RLMObject
+@interface TAListItemObject : RLMObject <MTLJSONSerializing>
 
 @property NSString *backdropPath;
 @property NSInteger itemId;

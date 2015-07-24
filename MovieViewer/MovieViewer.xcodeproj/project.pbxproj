@@ -8,14 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		224D3DEAB0A47AEA3B3AD3C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE867138158BA20BE0672B1 /* libPods.a */; };
+		564788D01B624C1100CAC87D /* RLMObject+Mantle.m in Sources */ = {isa = PBXBuildFile; fileRef = 564788CF1B624C1100CAC87D /* RLMObject+Mantle.m */; };
 		5684E3641B5E272A0004DD14 /* NSDateFormatter+TADateFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2F91B5E27290004DD14 /* NSDateFormatter+TADateFormatters.m */; };
 		5684E3651B5E272A0004DD14 /* UIViewController+ChildViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2FB1B5E27290004DD14 /* UIViewController+ChildViews.m */; };
 		5684E3661B5E272A0004DD14 /* TARouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2FF1B5E27290004DD14 /* TARouter.m */; };
-		5684E3671B5E272A0004DD14 /* TADiscoverItemResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3031B5E27290004DD14 /* TADiscoverItemResponseModel.m */; };
-		5684E3681B5E272A0004DD14 /* TADiscoverResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3051B5E27290004DD14 /* TADiscoverResponseModel.m */; };
 		5684E3691B5E272A0004DD14 /* TAListChangedResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3071B5E27290004DD14 /* TAListChangedResponseModel.m */; };
-		5684E36A1B5E272A0004DD14 /* TAListItemResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3091B5E272A0004DD14 /* TAListItemResponseModel.m */; };
-		5684E36B1B5E272A0004DD14 /* TAListResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E30B1B5E272A0004DD14 /* TAListResponseModel.m */; };
 		5684E36C1B5E272A0004DD14 /* TANewSessionResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E30E1B5E272A0004DD14 /* TANewSessionResponseModel.m */; };
 		5684E36D1B5E272A0004DD14 /* TANewTokenResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3101B5E272A0004DD14 /* TANewTokenResponseModel.m */; };
 		5684E36E1B5E272A0004DD14 /* TAValidateResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E3121B5E272A0004DD14 /* TAValidateResponseModel.m */; };
@@ -89,6 +86,8 @@
 
 /* Begin PBXFileReference section */
 		442A0F1FB7677EFE7F7505F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		564788CE1B624C1100CAC87D /* RLMObject+Mantle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMObject+Mantle.h"; sourceTree = "<group>"; };
+		564788CF1B624C1100CAC87D /* RLMObject+Mantle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+Mantle.m"; sourceTree = "<group>"; };
 		5684E2E71B5DBA030004DD14 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5684E2F81B5E27290004DD14 /* NSDateFormatter+TADateFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+TADateFormatters.h"; sourceTree = "<group>"; };
 		5684E2F91B5E27290004DD14 /* NSDateFormatter+TADateFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+TADateFormatters.m"; sourceTree = "<group>"; };
@@ -96,16 +95,8 @@
 		5684E2FB1B5E27290004DD14 /* UIViewController+ChildViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ChildViews.m"; sourceTree = "<group>"; };
 		5684E2FE1B5E27290004DD14 /* TARouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARouter.h; sourceTree = "<group>"; };
 		5684E2FF1B5E27290004DD14 /* TARouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARouter.m; sourceTree = "<group>"; };
-		5684E3021B5E27290004DD14 /* TADiscoverItemResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoverItemResponseModel.h; sourceTree = "<group>"; };
-		5684E3031B5E27290004DD14 /* TADiscoverItemResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoverItemResponseModel.m; sourceTree = "<group>"; };
-		5684E3041B5E27290004DD14 /* TADiscoverResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoverResponseModel.h; sourceTree = "<group>"; };
-		5684E3051B5E27290004DD14 /* TADiscoverResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoverResponseModel.m; sourceTree = "<group>"; };
 		5684E3061B5E27290004DD14 /* TAListChangedResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAListChangedResponseModel.h; sourceTree = "<group>"; };
 		5684E3071B5E27290004DD14 /* TAListChangedResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAListChangedResponseModel.m; sourceTree = "<group>"; };
-		5684E3081B5E272A0004DD14 /* TAListItemResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAListItemResponseModel.h; sourceTree = "<group>"; };
-		5684E3091B5E272A0004DD14 /* TAListItemResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAListItemResponseModel.m; sourceTree = "<group>"; };
-		5684E30A1B5E272A0004DD14 /* TAListResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAListResponseModel.h; sourceTree = "<group>"; };
-		5684E30B1B5E272A0004DD14 /* TAListResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAListResponseModel.m; sourceTree = "<group>"; };
 		5684E30C1B5E272A0004DD14 /* TANetworkModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TANetworkModels.h; sourceTree = "<group>"; };
 		5684E30D1B5E272A0004DD14 /* TANewSessionResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TANewSessionResponseModel.h; sourceTree = "<group>"; };
 		5684E30E1B5E272A0004DD14 /* TANewSessionResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TANewSessionResponseModel.m; sourceTree = "<group>"; };
@@ -263,6 +254,8 @@
 				5684E2FB1B5E27290004DD14 /* UIViewController+ChildViews.m */,
 				56E3646E1B61229200908459 /* NSError+EmbeddedError.h */,
 				56E3646F1B61229200908459 /* NSError+EmbeddedError.m */,
+				564788CE1B624C1100CAC87D /* RLMObject+Mantle.h */,
+				564788CF1B624C1100CAC87D /* RLMObject+Mantle.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -296,16 +289,8 @@
 		5684E3011B5E27290004DD14 /* NetworkModels */ = {
 			isa = PBXGroup;
 			children = (
-				5684E3021B5E27290004DD14 /* TADiscoverItemResponseModel.h */,
-				5684E3031B5E27290004DD14 /* TADiscoverItemResponseModel.m */,
-				5684E3041B5E27290004DD14 /* TADiscoverResponseModel.h */,
-				5684E3051B5E27290004DD14 /* TADiscoverResponseModel.m */,
 				5684E3061B5E27290004DD14 /* TAListChangedResponseModel.h */,
 				5684E3071B5E27290004DD14 /* TAListChangedResponseModel.m */,
-				5684E3081B5E272A0004DD14 /* TAListItemResponseModel.h */,
-				5684E3091B5E272A0004DD14 /* TAListItemResponseModel.m */,
-				5684E30A1B5E272A0004DD14 /* TAListResponseModel.h */,
-				5684E30B1B5E272A0004DD14 /* TAListResponseModel.m */,
 				5684E30C1B5E272A0004DD14 /* TANetworkModels.h */,
 				5684E30D1B5E272A0004DD14 /* TANewSessionResponseModel.h */,
 				5684E30E1B5E272A0004DD14 /* TANewSessionResponseModel.m */,
@@ -791,7 +776,6 @@
 				5684E3771B5E272A0004DD14 /* TAServiceProvider.m in Sources */,
 				5684E3751B5E272A0004DD14 /* TAListResponseObject.m in Sources */,
 				5684E38F1B5E272A0004DD14 /* TARootViewModel.m in Sources */,
-				5684E3671B5E272A0004DD14 /* TADiscoverItemResponseModel.m in Sources */,
 				5684E3851B5E272A0004DD14 /* TALoginViewController.m in Sources */,
 				5684E3691B5E272A0004DD14 /* TAListChangedResponseModel.m in Sources */,
 				5684E37E1B5E272A0004DD14 /* TAViewModel.m in Sources */,
@@ -800,8 +784,8 @@
 				5684E3791B5E272A0004DD14 /* TAApplicationAssembly.m in Sources */,
 				5684E3741B5E272A0004DD14 /* TAListItemObject.m in Sources */,
 				5684E3651B5E272A0004DD14 /* UIViewController+ChildViews.m in Sources */,
+				564788D01B624C1100CAC87D /* RLMObject+Mantle.m in Sources */,
 				5684E37F1B5E272A0004DD14 /* TADiscoveryViewController.m in Sources */,
-				5684E3681B5E272A0004DD14 /* TADiscoverResponseModel.m in Sources */,
 				5684E38D1B5E272A0004DD14 /* TAMainViewController.m in Sources */,
 				5684E3881B5E272A0004DD14 /* TACentralViewController.m in Sources */,
 				56E364701B61229200908459 /* NSError+EmbeddedError.m in Sources */,
@@ -818,8 +802,6 @@
 				5684E3871B5E272A0004DD14 /* TALoginViewModel.m in Sources */,
 				56E364671B60D39200908459 /* TAErrors.m in Sources */,
 				56E364641B60CCEF00908459 /* TAServicesAssembly.m in Sources */,
-				5684E36B1B5E272A0004DD14 /* TAListResponseModel.m in Sources */,
-				5684E36A1B5E272A0004DD14 /* TAListItemResponseModel.m in Sources */,
 				5684E3981B5E42470004DD14 /* TATableViewController.m in Sources */,
 				5684E3821B5E272A0004DD14 /* TAFavoritesViewController.m in Sources */,
 				56E364611B60CBFF00908459 /* TAFacadesAssembly.m in Sources */,

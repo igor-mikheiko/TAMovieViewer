@@ -13,8 +13,8 @@
 @class TANewSessionResponseModel;
 @class TADiscoverRequestParametersModel;
 @class TAFavoriteListRequestParametersModel;
-@class TADiscoverResponseModel;
-@class TAListResponseModel;
+@class TADiscoveryObject;
+@class TAListResponseObject;
 @class TAWatchlistRequestParametersModel;
 @class TAAddWatchlistRequestModel;
 @class TAListChangedResponseModel;
@@ -37,15 +37,15 @@
                             andErrorBlock: (void (^) (NSError *)) errorBlock;
 
 - (void) getDiscoverMoviesWithParameters: (TADiscoverRequestParametersModel *) parameters
-                             withSuccess: (void (^) (TADiscoverResponseModel *)) success
+                             withSuccess: (void (^) (TADiscoveryObject *)) success
                                 andError: (void (^)(NSError *)) errorBlock;
 
 - (void) getFavoriteMoviesWithParameters: (TAFavoriteListRequestParametersModel *) parameters
-                             withSuccess: (void (^)(TAListResponseModel *)) success
+                             withSuccess: (void (^)(TAListResponseObject *)) success
                                 andError: (void (^)(NSError *)) errorBlock;
 
 - (void) getWatchlistWithParameters: (TAWatchlistRequestParametersModel *) parameters
-                        withSuccess: (void (^)(TAListResponseModel *)) success
+                        withSuccess: (void (^)(TAListResponseObject *)) success
                       andErrorBlock: (void (^)(NSError *)) errorBlock;
 
 - (void) postToWatchlistMovieWithParameters: (TAAddWatchlistRequestModel *) parameters

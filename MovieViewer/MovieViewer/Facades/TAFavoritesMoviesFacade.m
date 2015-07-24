@@ -9,7 +9,7 @@
 #import "TAFavoritesMoviesFacade.h"
 #import "TALoginFacade.h"
 #import "TAFavoriteListRequestParametersModel.h"
-#import "TAListResponseModel.h"
+#import "TAListResponseObject.h"
 #import "TAErrors.h"
 #import "TAConstants.h"
 
@@ -38,7 +38,7 @@ static NSUInteger const kTotalPagesUndefined = NSUIntegerMax;
     if ([self.loginFacade isAlreadyAuthenticated]) {
         TAFavoriteListRequestParametersModel *parameters = [TAFavoriteListRequestParametersModel new];
         parameters.page = page;
-        [self.serviceProvider getFavoriteMoviesWithParameters:parameters withSuccess:^(TAListResponseModel *response) {
+        [self.serviceProvider getFavoriteMoviesWithParameters:parameters withSuccess:^(TAListResponseObject *response) {
             _totalPages = response.totalPages;
             BLOCK_EXEC(success, response.results);
         } andError:^(NSError *error) {

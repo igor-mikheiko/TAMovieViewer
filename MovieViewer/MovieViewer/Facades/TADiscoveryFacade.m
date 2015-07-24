@@ -11,7 +11,7 @@
 #import "TAErrors.h"
 #import "TAConstants.h"
 #import "TADiscoverRequestParametersModel.h"
-#import "TADiscoverResponseModel.h"
+#import "TADiscoveryObject.h"
 
 static NSUInteger const kTotalPagesUndefined = NSUIntegerMax;
 
@@ -38,7 +38,7 @@ static NSUInteger const kTotalPagesUndefined = NSUIntegerMax;
     if ([self.loginFacade isAlreadyAuthenticated]) {
         TADiscoverRequestParametersModel *parameters = [TADiscoverRequestParametersModel new];
         parameters.page = page;
-        [self.serviceProvider getDiscoverMoviesWithParameters:parameters withSuccess:^(TADiscoverResponseModel *response) {
+        [self.serviceProvider getDiscoverMoviesWithParameters:parameters withSuccess:^(TADiscoveryObject *response) {
             _totalPages = response.totalPages;
             BLOCK_EXEC(success, response.results);
         } andError:^(NSError *error) {

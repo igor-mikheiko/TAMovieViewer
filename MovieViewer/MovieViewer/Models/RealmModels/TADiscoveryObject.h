@@ -10,7 +10,7 @@
 #import "RLMArray.h"
 #import "TADiscoverItemObject.h"
 
-@interface TADiscoveryObject : RLMObject
+@interface TADiscoveryObject : RLMObject <MTLJSONSerializing>
 
 @property NSUInteger page;
 @property RLMArray <TADiscoverItemObject> *results;

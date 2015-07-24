@@ -10,4 +10,18 @@
 
 @implementation TAListResponseObject
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
+    return @{
+             @"totalPages": @"total_pages",
+             @"totalResults": @"total_results"
+             };
+}
+
++ (NSValueTransformer *)resultsJSONTransformer
+{
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[TAListItemObject class]];
+}
+
+
 @end

@@ -9,8 +9,9 @@
 #import "RLMObject.h"
 #import "TAListItemObject.h"
 #import "RLMArray.h"
+#import <Mantle/MTLJSONAdapter.h>
 
-@interface TAListResponseObject : RLMObject
+@interface TAListResponseObject : RLMObject <MTLJSONSerializing>
 
 @property NSUInteger page;
 @property RLMArray <TAFavoriteItemObject> *results;

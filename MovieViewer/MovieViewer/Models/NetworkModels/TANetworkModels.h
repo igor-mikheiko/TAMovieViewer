@@ -12,8 +12,6 @@
 #import "TANewTokenResponseModel.h"
 #import "TAValidateResponseModel.h"
 #import "TANewSessionResponseModel.h"
-#import "TADiscoverResponseModel.h"
-#import "TAListResponseModel.h"
 #import "TAListChangedResponseModel.h"
 
 
