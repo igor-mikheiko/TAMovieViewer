@@ -7,8 +7,11 @@
 //
 
 #import "RLMObject.h"
+#import "TAUserProfile.h"
 
 @interface TAListItemObject : RLMObject
+
+@property TAUserProfile *userProfile;
 
 @property NSString *backdropPath;
 @property NSInteger itemId;
