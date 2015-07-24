@@ -9,8 +9,12 @@
 #import "TAViewModel.h"
 #import "TATableViewModelProtocol.h"
 
+@class TADiscoveryFacade;
+
 @interface TADiscoveryViewModel : TAViewModel <TATableViewModelProtocol>
 
 @property (nonatomic, strong, readonly) NSArray *fetchedData;
+
+@property (nonatomic, strong) TADiscoveryFacade *facade;
 
 @end

@@ -45,6 +45,7 @@
 {
     return [TyphoonDefinition withClass:[TADiscoveryViewModel class] configuration:^(TyphoonDefinition *definition) {
         definition.parent = [self _basicViewModel];
+        [definition injectProperty:@selector(facade) with:[self.facadesAssembly discoveryFacade]];
     }];
 }
 

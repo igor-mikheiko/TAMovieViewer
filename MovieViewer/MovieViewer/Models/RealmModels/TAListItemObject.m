@@ -15,7 +15,7 @@
 
 + (NSString *)primaryKey
 {
-    return @"itemID";
+    return @"itemId";
 }
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
