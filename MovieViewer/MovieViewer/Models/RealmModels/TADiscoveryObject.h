@@ -12,9 +12,9 @@
 
 @interface TADiscoveryObject : RLMObject
 
-@property NSUInteger page;
+@property NSInteger page;
 @property RLMArray <TADiscoverItemObject> *results;
-@property NSUInteger totalPages;
-@property NSUInteger totalResults;
+@property NSInteger totalPages;
+@property NSInteger totalResults;
 
 @end

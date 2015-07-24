@@ -21,4 +21,4 @@
 
 @end
 
-RLM_ARRAY_TYPE(TAFavoriteItemObject)
+RLM_ARRAY_TYPE(TAListItemObject)

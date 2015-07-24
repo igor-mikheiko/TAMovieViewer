@@ -18,6 +18,7 @@ FOUNDATION_EXPORT NSString *const TALoginFacadeError;
 FOUNDATION_EXPORT NSString *const TADiscoveryFacadeError;
 FOUNDATION_EXPORT NSString *const TAFavoritesMoviesFacadeError;
 FOUNDATION_EXPORT NSString *const TAWatchedMoviesFacadeError;
+FOUNDATION_EXPORT NSString *const TAServiceProviderError;
 
 typedef NS_ENUM(NSUInteger, TALoginError) {
     TALoginErrorParameters,

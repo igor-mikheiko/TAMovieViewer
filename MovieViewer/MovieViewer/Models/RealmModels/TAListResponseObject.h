@@ -12,9 +12,9 @@
 
 @interface TAListResponseObject : RLMObject
 
-@property NSUInteger page;
-@property RLMArray <TAFavoriteItemObject> *results;
-@property NSUInteger totalPages;
-@property NSUInteger totalResults;
+@property NSInteger page;
+@property RLMArray <TAListItemObject> *results;
+@property NSInteger totalPages;
+@property NSInteger totalResults;
 
 @end
