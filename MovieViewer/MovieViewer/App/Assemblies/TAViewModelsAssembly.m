@@ -53,6 +53,7 @@
 {
     return [TyphoonDefinition withClass:[TAFavoritesViewModel class] configuration:^(TyphoonDefinition *definition) {
         definition.parent = [self _basicViewModel];
+        [definition injectPropetry:@selector(facade) with[self.facadesAssembly favoriteMoviesFacade]];
     }];
 }
 
@@ -60,6 +61,7 @@
 {
     return [TyphoonDefinition withClass:[TAWatchedViewModel class] configuration:^(TyphoonDefinition *definition) {
         definition.parent = [self _basicViewModel];
+        [definition injectPropetry:@selector(facade) with[self.facadesAssembly watchedMoviesFacade]];
     }];
 }
 

@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "TACellModelBindingProtocol.h"
-#import "TADiscoverItemObject.h"
+#import "TADiscoveryMovieViewModel.h"
 
-@interface TAMovieCell : UITableViewCell <TACellModelBindingProtocol>
+@interface TAMovieCell : UITableViewCell <TACellModelBindingProtocol, TADiscoveryMovieViewDelegate>
 
-- (void)bindWithModel:(TADiscoverItemObject *)model;
+- (void)bindWithModel:(TADiscoveryMovieViewModel *)model;
 
 @end

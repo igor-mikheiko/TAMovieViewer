@@ -9,7 +9,11 @@
 #import "TAViewModel.h"
 #import "TATableViewModelProtocol.h"
 
+@class TAWatchedMoviesFacade;
+
 @interface TAWatchedViewModel : TAViewModel <TATableViewModelProtocol>
+
+@property (nonatomic, strong) TAWatchedMoviesFacade *facade;
 
 @property (nonatomic, strong, readonly) NSArray *fetchedData;
 

@@ -7,15 +7,58 @@
 //
 
 #import "TADiscoveryViewModel.h"
+#import "TADiscoveryFacade.h"
+#import "TADiscoveryMovieActionDelegate.h"
+#import "TADiscoveryMovieViewModel.h"
 
-@implementation TADiscoveryViewModel
+@interface TADiscoveryViewModel () <TADiscoveryMovieActionDelegate>
+
+@end
+
+@implementation TADiscoveryViewModel {
+    NSUInteger _currentPage;
+}
+@synthesize viewDelegate;
 
 - (void)fetchNextData
 {
-    NSArray *newData = @[];
-    _fetchedData = [_fetchedData ?: @[] arrayByAddingObjectsFromArray:newData];
+    [self.facade getMoviesOnPage:(_currentPage + 1) success:^(NSArray *movies) {
+        ++_currentPage;
 
-    [self.viewDelegate tableViewModel:self didFetchNextData:newData];
+        NSMutableArray *newData = [NSMutableArray arrayWithCapacity:movies.count];
+        for (TADiscoverItemObject *discoveryItem in movies) {
+            TADiscoveryMovieViewModel *itemViewModel = [[TADiscoveryMovieViewModel alloc] initWithDiscovery:discoveryItem];
+            itemViewModel.actionDelegate = self;
+            [newData addObject:itemViewModel];
+        }
+        _fetchedData = [_fetchedData ?: @[] arrayByAddingObjectsFromArray:newData];
+
+        [self.viewDelegate tableViewModel:self didFetchNextData:newData];
+    } failure:^(NSError *error) {
+        [self.viewDelegate tableViewModel:self didFail:error];
+    }];
+}
+
+#pragma mark - TADiscoveryMovieActionDelegate
+
+- (void)performAddFavoriteDiscoveryViewModel:(TADiscoveryMovieViewModel *)viewModel
+{
+    [viewModel.viewDelegate updateView];
+}
+
+- (void)performRemoveFavoriteDiscoveryViewModel:(TADiscoveryMovieViewModel *)viewModel
+{
+    [viewModel.viewDelegate updateView];
+}
+
+- (void)performAddWatchedDiscoveryViewModel:(TADiscoveryMovieViewModel *)viewModel
+{
+    [viewModel.viewDelegate updateView];
+}
+
+- (void)performRemoveWatchedDiscoveryViewModel:(TADiscoveryMovieViewModel *)viewModel
+{
+    [viewModel.viewDelegate updateView];
 }
 
 @end
