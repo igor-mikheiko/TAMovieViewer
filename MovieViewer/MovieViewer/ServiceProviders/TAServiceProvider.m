@@ -133,6 +133,7 @@ NSString *const kParameterFavoriteKey = @"favorite";
     if (![currentSessionInfo sessionId]){
         NSError *error = [NSError errorWithDomain:TAMakeAppDomain(TAServiceProviderError) code:401 userInfo:nil];
         BLOCK_EXEC(errorBlock,error);
+        return;
     }
 
     NSDictionary *getParams = @{
@@ -155,6 +156,7 @@ NSString *const kParameterFavoriteKey = @"favorite";
     if (![currentSessionInfo sessionId]){
         NSError *error = [NSError errorWithDomain:TAMakeAppDomain(TAServiceProviderError) code:401 userInfo:nil];
         BLOCK_EXEC(errorBlock,error);
+        return;
     }
 
     NSDictionary *reqParameters = @{
@@ -180,6 +182,7 @@ NSString *const kParameterFavoriteKey = @"favorite";
     if (![currentSessionInfo sessionId]){
         NSError *error = [NSError errorWithDomain:TAMakeAppDomain(TAServiceProviderError) code:401 userInfo:nil];
         BLOCK_EXEC(errorBlock,error);
+        return;
     }
 
     NSDictionary *postParameters = @{
@@ -208,6 +211,7 @@ NSString *const kParameterFavoriteKey = @"favorite";
     if (![currentSessionInfo sessionId]){
         NSError *error = [NSError errorWithDomain:TAMakeAppDomain(TAServiceProviderError) code:401 userInfo:nil];
         BLOCK_EXEC(errorBlock,error);
+        return;
     }
 
     NSDictionary *reqParameters = @{
@@ -232,6 +236,7 @@ NSString *const kParameterFavoriteKey = @"favorite";
     if (![currentSessionInfo sessionId]){
         NSError *error = [NSError errorWithDomain:TAMakeAppDomain(TAServiceProviderError) code:401 userInfo:nil];
         BLOCK_EXEC(errorBlock,error);
+        return;
     }
 
     NSDictionary *postParameters = @{
