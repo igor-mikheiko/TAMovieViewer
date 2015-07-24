@@ -22,37 +22,31 @@
 
 @interface TAServiceProvider : OVCHTTPSessionManager
 
-- (void) checkUser: (NSString *)username idAuthorized: (void (^)(BOOL isAuthorized)) checkComplition;
+- (void) checkUser: (NSString *)username isAuthorized: (void (^)(BOOL isAuthorized)) checkCompletion;
 
 - (void) logoutCurrentUser;
 
-- (void) generateValidTokenWithSuccessBlock: (void  (^)(TANewTokenResponseModel *)) success
-                              andErrorBlock: (void (^) (NSError *)) errorBlock;
-
 - (void) validateUserAuthInfo: (TAUserAuthInfo *) userAuthModel
-             withSuccessBlock: (void (^)(TAValidateResponseModel *)) success
+             withSuccessBlock: (void (^) ()) success
                 andErrorBlock: (void (^) (NSError *)) errorBlock;
 
-- (void) createNewSessionWithSuccessBlock: (void (^)(TANewSessionResponseModel *)) success
-                            andErrorBlock: (void (^) (NSError *)) errorBlock;
-
 - (void) getDiscoverMoviesWithParameters: (TADiscoverRequestParametersModel *) parameters
-                             withSuccess: (void (^) (TADiscoveryObject *)) success
-                                andError: (void (^)(NSError *)) errorBlock;
+                             withSuccess: (void (^) (TADiscoveryObject *discoveryObject)) success
+                                andError: (void (^)(NSError *error)) errorBlock;
 
 - (void) getFavoriteMoviesWithParameters: (TAFavoriteListRequestParametersModel *) parameters
-                             withSuccess: (void (^)(TAListResponseObject *)) success
-                                andError: (void (^)(NSError *)) errorBlock;
+                             withSuccess: (void (^)(TAListResponseObject *moviesListObject)) success
+                                andError: (void (^)(NSError *error)) errorBlock;
 
 - (void) getWatchlistWithParameters: (TAWatchlistRequestParametersModel *) parameters
-                        withSuccess: (void (^)(TAListResponseObject *)) success
-                      andErrorBlock: (void (^)(NSError *)) errorBlock;
+                        withSuccess: (void (^)(TAListResponseObject *moviesListObject)) success
+                      andErrorBlock: (void (^)(NSError *error)) errorBlock;
 
 - (void) postToWatchlistMovieWithParameters: (TAAddWatchlistRequestModel *) parameters
-                                withSuccess: (void (^)(TAListChangedResponseModel *)) success
-                              andErrorBlock: (void (^)(NSError *)) errorBlock;
+                                withSuccess: (void (^)(TAListChangedResponseModel *watchlistChangedObject)) success
+                              andErrorBlock: (void (^)(NSError *error)) errorBlock;
 
 - (void) postToFavoriteMovieWithParameters: (TAAddFavoriteRequestModel *) parameters
-                               withSuccess: (void (^)(TAListChangedResponseModel *)) success
-                             andErrorBlock: (void (^)(NSError *)) errorBlock;
+                               withSuccess: (void (^)(TAListChangedResponseModel *favoritesChangedObject)) success
+                             andErrorBlock: (void (^)(NSError *error)) errorBlock;
 @end

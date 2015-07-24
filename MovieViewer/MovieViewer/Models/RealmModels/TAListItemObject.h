@@ -8,6 +8,8 @@
 
 #import "RLMObject.h"
 #import <Mantle/MTLJSONAdapter.h>
+#import <Realm/RLMArray.h>
+#import "TAUserProfile.h"
 
 @interface TAListItemObject : RLMObject <MTLJSONSerializing>
 
@@ -22,4 +24,16 @@
 
 @end
 
-RLM_ARRAY_TYPE(TAFavoriteItemObject)
+RLM_ARRAY_TYPE(TAListItemObject)
+
+@interface TAFavoriteListItemObject : TAListItemObject
+
+@end
+
+RLM_ARRAY_TYPE(TAFavoriteListItemObject)
+
+@interface TAWatchedListItemObject : TAListItemObject
+
+@end
+
+RLM_ARRAY_TYPE(TAWatchedListItemObject)

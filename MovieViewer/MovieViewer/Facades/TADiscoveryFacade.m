@@ -35,19 +35,15 @@ static NSUInteger const kTotalPagesUndefined = NSUIntegerMax;
         return;
     }
 
-    if ([self.loginFacade isAlreadyAuthenticated]) {
-        TADiscoverRequestParametersModel *parameters = [TADiscoverRequestParametersModel new];
-        parameters.page = page;
-        [self.serviceProvider getDiscoverMoviesWithParameters:parameters withSuccess:^(TADiscoveryObject *response) {
-            _totalPages = response.totalPages;
-            BLOCK_EXEC(success, response.results);
-        } andError:^(NSError *error) {
-            NSError* facadeError = [NSError errorWithUnderlyingError:error domain:TAMakeAppDomain(TADiscoveryFacadeError) code:1 userInfo:nil];
-            BLOCK_EXEC(failure, facadeError);
-        }];
-    } else {
-        //TODO: handle
-    }
+    TADiscoverRequestParametersModel *parameters = [TADiscoverRequestParametersModel new];
+    parameters.page = page;
+    [self.serviceProvider getDiscoverMoviesWithParameters:parameters withSuccess:^(TADiscoveryObject *response) {
+        _totalPages = response.totalPages;
+        BLOCK_EXEC(success, response.results);
+    } andError:^(NSError *error) {
+        NSError* facadeError = [NSError errorWithUnderlyingError:error domain:TAMakeAppDomain(TADiscoveryFacadeError) code:1 userInfo:nil];
+        BLOCK_EXEC(failure, facadeError);
+    }];
 }
 
 @end

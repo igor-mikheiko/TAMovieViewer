@@ -9,3 +9,5 @@
 #import "TAConstants.h"
 
 NSString *const TAUserLogoutNotificationName = @"TAUserLogoutNotification";
+
+NSString *const TATMDBApiKey = @"102a45c3d5aa0a1dde3d8aa7ce01539e";

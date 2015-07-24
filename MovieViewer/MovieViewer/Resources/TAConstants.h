@@ -9,3 +9,5 @@
 #import <Foundation/Foundation.h>
 
 FOUNDATION_EXPORT NSString *const TAUserLogoutNotificationName;
+
+FOUNDATION_EXPORT NSString *const TATMDBApiKey;

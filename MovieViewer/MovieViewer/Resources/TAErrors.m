@@ -12,3 +12,4 @@ NSString *const TALoginFacadeError = @"loginFacade";
 NSString *const TADiscoveryFacadeError = @"discoveryMoviesFacade";
 NSString *const TAFavoritesMoviesFacadeError = @"favoritesMoviesFacade";
 NSString *const TAWatchedMoviesFacadeError = @"watchedMoviesFacade";
+NSString *const TAServiceProviderError = @"serviceProvider";

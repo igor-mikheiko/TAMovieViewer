@@ -10,16 +10,49 @@
 #import "TAValidateResponseModel.h"
 #import "TANewSessionResponseModel.h"
 #import "TAErrors.h"
-
+#import <Realm/Realm.h>
 
 @implementation TALoginFacade {
-    NSString *_requestToken;
-    NSString *_sessionId;
+    BOOL _shouldCheckAuthentication;
+    BOOL _isLastAuthorized;
 }
 
-- (BOOL)isAlreadyAuthenticated
+- (void)checkUserAuthorization:(ta_login_check)checkCompletion
 {
-    return [_requestToken length] && [_sessionId length];
+    if (_shouldCheckAuthentication) {
+        RLMRealm *storage = [RLMRealm defaultRealm];
+        RLMResults *users = [TAUserProfile allObjectsInRealm:storage];
+
+        if ([users count] == 0) {
+            _isLastAuthorized = NO;
+            _shouldCheckAuthentication = NO;
+            BLOCK_EXEC(checkCompletion, _isLastAuthorized)
+            return;
+        }
+
+        void(^checkUser)(TAUserProfile *user, NSUInteger const nextIndex) = ^(TAUserProfile *user, NSUInteger const nextIndex) {
+            [self.serviceProvider checkUser:user.username isAuthorized:^(BOOL isAuthorized) {
+                if (isAuthorized) {
+                    _shouldCheckAuthentication = NO;
+                    _isLastAuthorized = YES;
+                    _user = user;
+                    BLOCK_EXEC(checkCompletion, isAuthorized)
+                } else {
+                    if ([users count] > nextIndex) {
+                        checkUser(users[nextIndex], nextIndex + 1);
+                    } else {
+                        _shouldCheckAuthentication = NO;
+                        _isLastAuthorized = NO;
+                        BLOCK_EXEC(checkCompletion, _isLastAuthorized)
+                    }
+                }
+            }];
+        };
+
+        checkUser([users firstObject], 1);
+    } else {
+        BLOCK_EXEC(checkCompletion, _isLastAuthorized)
+    }
 }
 
 - (void)authenticateWithUsername:(NSString *)username password:(NSString *)password success:(ta_login_success_block)success failure:(ta_login_failure_block)failure
@@ -29,21 +62,25 @@
     authInfo.password = password;
     [self.serviceProvider validateUserAuthInfo:authInfo withSuccessBlock:^(TAValidateResponseModel *authResponse) {
         if (authResponse.success) {
-            _requestToken = authResponse.requestToken;
-            [self.serviceProvider createNewSessionWithSuccessBlock:^(TANewSessionResponseModel *sessionResponse) {
-                if (sessionResponse.success) {
-                    _sessionId = sessionResponse.sessionId;
-                    BLOCK_EXEC(success)
-                }
-            } andErrorBlock:^(NSError *error) {
-                NSError *loginError = [NSError errorWithUnderlyingError:error domain:TAMakeAppDomain(TALoginFacadeError) code:error.code userInfo:error.userInfo];
-                BLOCK_EXEC(failure, loginError)
-            }];
+            RLMRealm *storage = [RLMRealm defaultRealm];
+            TAUserProfile *user = [TAUserProfile objectForPrimaryKey:username];
+            if (user) {
+                _user = user;
+            } else {
+                TAUserProfile *newUser = [TAUserProfile new];
+                newUser.username = username;
+                [storage beginWriteTransaction];
+                _user = [TAUserProfile createOrUpdateInRealm:storage withValue:newUser];
+                [storage commitWriteTransaction];
+            }
+            BLOCK_EXEC(success)
         } else {
+            _user = nil;
             NSError *error = [NSError errorWithDomain:TAMakeAppDomain(TALoginFacadeError) code:TALoginUndefined userInfo:nil];
             BLOCK_EXEC(failure, error)
         }
     } andErrorBlock:^(NSError *error) {
+        _user = nil;
         NSError *loginError = [NSError errorWithUnderlyingError:error domain:TAMakeAppDomain(TALoginFacadeError) code:1 userInfo:nil];
         BLOCK_EXEC(failure, loginError);
     }];
@@ -51,8 +88,9 @@
 
 - (void)logout
 {
-    _requestToken = nil;
-    _sessionId = nil;
+    _shouldCheckAuthentication = YES;
+    _isLastAuthorized = NO;
+    [self.serviceProvider logoutCurrentUser];
 
     [[NSNotificationCenter defaultCenter] postNotificationName:TAUserLogoutNotificationName object:nil];
 }

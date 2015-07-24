@@ -12,6 +12,10 @@
 #import "TAListResponseObject.h"
 #import "TAErrors.h"
 #import "TAConstants.h"
+#import <Realm/Realm.h>
+#import "TADispatchManagement.h"
+#import "TAListItemObject.h"
+#import "TACollectionPaginator.h"
 
 static NSUInteger const kTotalPagesUndefined = NSUIntegerMax;
 
@@ -35,18 +39,35 @@ static NSUInteger const kTotalPagesUndefined = NSUIntegerMax;
         return;
     }
 
-    if ([self.loginFacade isAlreadyAuthenticated]) {
+    if (self.serviceProvider.reachabilityManager.isReachable) {
         TAFavoriteListRequestParametersModel *parameters = [TAFavoriteListRequestParametersModel new];
         parameters.page = page;
         [self.serviceProvider getFavoriteMoviesWithParameters:parameters withSuccess:^(TAListResponseObject *response) {
             _totalPages = response.totalPages;
+
+            ta_dispatch_async(^{
+                RLMRealm *storage = [RLMRealm defaultRealm];
+                TAUserProfile *user = self.loginFacade.user;
+                [storage beginWriteTransaction];
+                [user.watchedList addObjects:response.results];
+                [TAUserProfile createOrUpdateInRealm:storage withValue:user];
+                [storage commitWriteTransaction];
+            });
+
             BLOCK_EXEC(success, response.results);
         } andError:^(NSError *error) {
+            //todo: handle service unavailable situation
             NSError *facadeError = [NSError errorWithUnderlyingError:error domain:TAMakeAppDomain(TAFavoritesMoviesFacadeError) code:1 userInfo:nil];
             BLOCK_EXEC(failure, facadeError)
         }];
     } else {
-        //TODO: handle
+        ta_dispatch_main_queue(^{
+            RLMRealm *storage = [RLMRealm defaultRealm];
+            TAUserProfile *user = [TAUserProfile objectInRealm:storage forPrimaryKey:self.loginFacade.user.username];
+            RLMArray *favorites = user.favoritesList;
+            NSArray *paginatedResults = [TACollectionPaginator collectionArray:favorites atPage:page size:self.pageSize];
+            BLOCK_EXEC(success, paginatedResults);
+        });
     }
 }
 

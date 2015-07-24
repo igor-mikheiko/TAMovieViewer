@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RLMObject.h"
+#import "TAUserProfile.h"
 
 @interface TAUserTMDBSessionObject : RLMObject
 
@@ -12,5 +13,7 @@
 @property NSString *sessionToken;
 @property NSString *sessionId;
 @property NSString *username;
+
+@property TAUserProfile *userProfile;
 
 @end
