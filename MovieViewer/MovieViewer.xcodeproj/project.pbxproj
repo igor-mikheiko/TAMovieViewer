@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		224D3DEAB0A47AEA3B3AD3C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE867138158BA20BE0672B1 /* libPods.a */; };
+		564788D31B62726800CAC87D /* TAUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 564788D21B62726800CAC87D /* TAUserProfile.m */; };
 		5684E3641B5E272A0004DD14 /* NSDateFormatter+TADateFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2F91B5E27290004DD14 /* NSDateFormatter+TADateFormatters.m */; };
 		5684E3651B5E272A0004DD14 /* UIViewController+ChildViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2FB1B5E27290004DD14 /* UIViewController+ChildViews.m */; };
 		5684E3661B5E272A0004DD14 /* TARouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684E2FF1B5E27290004DD14 /* TARouter.m */; };
@@ -89,6 +90,8 @@
 
 /* Begin PBXFileReference section */
 		442A0F1FB7677EFE7F7505F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		564788D11B62726800CAC87D /* TAUserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAUserProfile.h; sourceTree = "<group>"; };
+		564788D21B62726800CAC87D /* TAUserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAUserProfile.m; sourceTree = "<group>"; };
 		5684E2E71B5DBA030004DD14 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5684E2F81B5E27290004DD14 /* NSDateFormatter+TADateFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+TADateFormatters.h"; sourceTree = "<group>"; };
 		5684E2F91B5E27290004DD14 /* NSDateFormatter+TADateFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+TADateFormatters.m"; sourceTree = "<group>"; };
@@ -346,6 +349,8 @@
 				5684E3211B5E272A0004DD14 /* TAListResponseObject.m */,
 				F87B4DD8D34961AD5E7DA5D6 /* TAUserTMDBSessionObject.m */,
 				F87B49D144D0E242D988A76C /* TAUserTMDBSessionObject.h */,
+				564788D11B62726800CAC87D /* TAUserProfile.h */,
+				564788D21B62726800CAC87D /* TAUserProfile.m */,
 			);
 			path = RealmModels;
 			sourceTree = "<group>";
@@ -826,6 +831,7 @@
 				5684E3811B5E272A0004DD14 /* TADiscoveryViewModel.m in Sources */,
 				5684E3941B5E274B0004DD14 /* main.m in Sources */,
 				5684E37A1B5E272A0004DD14 /* TAViewModelsAssembly.m in Sources */,
+				564788D31B62726800CAC87D /* TAUserProfile.m in Sources */,
 				F87B40BC0B68E6AA8FA383BC /* TAUserAuthInfo.m in Sources */,
 				56E3645B1B60CB7900908459 /* TALoginFacade.m in Sources */,
 				F87B464CF2280C5A831D1B3E /* TADiscoverRequestParametersModel.m in Sources */,
