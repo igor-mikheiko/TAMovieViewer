@@ -7,11 +7,10 @@
 //
 
 #import "RLMObject.h"
+#import <Realm/RLMArray.h>
 #import "TAUserProfile.h"
 
 @interface TAListItemObject : RLMObject
-
-@property TAUserProfile *userProfile;
 
 @property NSString *backdropPath;
 @property NSInteger itemId;
@@ -25,3 +24,15 @@
 @end
 
 RLM_ARRAY_TYPE(TAListItemObject)
+
+@interface TAFavoriteListItemObject : TAListItemObject
+
+@end
+
+RLM_ARRAY_TYPE(TAFavoriteListItemObject)
+
+@interface TAWatchedListItemObject : TAListItemObject
+
+@end
+
+RLM_ARRAY_TYPE(TAWatchedListItemObject)

@@ -7,9 +7,18 @@
 //
 
 #import "RLMObject.h"
+#import <Realm/RLMArray.h>
+#import "TAListItemObject.h"
+
+@protocol TAFavoriteListItemObject,
+TAWatchedListItemObject;
 
 @interface TAUserProfile : RLMObject
 
 @property NSString *username;
+
+@property RLMArray<TAFavoriteListItemObject> *favoritesList;
+
+@property RLMArray<TAWatchedListItemObject> *watchedList;
 
 @end

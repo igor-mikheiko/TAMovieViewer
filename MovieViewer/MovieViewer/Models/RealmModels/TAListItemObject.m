@@ -11,3 +11,11 @@
 @implementation TAListItemObject
 
 @end
+
+@implementation TAFavoriteListItemObject
+
+@end
+
+@implementation TAWatchedListItemObject
+
+@end
