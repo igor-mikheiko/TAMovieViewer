@@ -70,9 +70,11 @@
 		F87B401B19568AAC5584FCE2 /* TAAddWatchlistRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4FB2A5B883FE7E75B6C2 /* TAAddWatchlistRequestModel.m */; };
 		F87B40BC0B68E6AA8FA383BC /* TAUserAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4E42E36B9F37C5574468 /* TAUserAuthInfo.m */; };
 		F87B41263BCD66B2D9029C6B /* TAWatchlistRequestParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B48916DB7F5E8EB6A9B89 /* TAWatchlistRequestParametersModel.m */; };
+		F87B413A8D7C83E8C9B723FA /* TADispatchManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B41F2F3F339CC24649B34 /* TADispatchManagement.m */; };
 		F87B4349E758E49A3B00EC90 /* TAFavoriteListRequestParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4C66FBBACE18B30335C2 /* TAFavoriteListRequestParametersModel.m */; };
 		F87B45DE1291A6CD296FA321 /* TAAddFavoriteRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4CE66ACAA6AC9C9F6B2C /* TAAddFavoriteRequestModel.m */; };
 		F87B464CF2280C5A831D1B3E /* TADiscoverRequestParametersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4301075A0CC9D440722F /* TADiscoverRequestParametersModel.m */; };
+		F87B49922B29657BCCFB7936 /* TAUserTMDBSessionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B4DD8D34961AD5E7DA5D6 /* TAUserTMDBSessionObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,14 +209,18 @@
 		56E364751B61293C00908459 /* TAWatchedMoviesFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAWatchedMoviesFacade.m; sourceTree = "<group>"; };
 		9DE867138158BA20BE0672B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0ADB411BD28461562FFA885 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F87B41F2F3F339CC24649B34 /* TADispatchManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADispatchManagement.m; sourceTree = "<group>"; };
 		F87B4301075A0CC9D440722F /* TADiscoverRequestParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADiscoverRequestParametersModel.m; sourceTree = "<group>"; };
 		F87B432CE2711C9D6F15D342 /* TAFavoriteListRequestParametersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFavoriteListRequestParametersModel.h; sourceTree = "<group>"; };
 		F87B44BE4E7A25C4CDE89FE3 /* TAAddWatchlistRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddWatchlistRequestModel.h; sourceTree = "<group>"; };
+		F87B4529FC2BD9F0B360A1DF /* TADispatchManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADispatchManagement.h; sourceTree = "<group>"; };
 		F87B465D779FAD67455094A1 /* TAWatchlistRequestParametersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAWatchlistRequestParametersModel.h; sourceTree = "<group>"; };
 		F87B48916DB7F5E8EB6A9B89 /* TAWatchlistRequestParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAWatchlistRequestParametersModel.m; sourceTree = "<group>"; };
+		F87B49D144D0E242D988A76C /* TAUserTMDBSessionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAUserTMDBSessionObject.h; sourceTree = "<group>"; };
 		F87B4B6F263112B1E881A373 /* TAUserAuthInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAUserAuthInfo.h; sourceTree = "<group>"; };
 		F87B4C66FBBACE18B30335C2 /* TAFavoriteListRequestParametersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFavoriteListRequestParametersModel.m; sourceTree = "<group>"; };
 		F87B4CE66ACAA6AC9C9F6B2C /* TAAddFavoriteRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddFavoriteRequestModel.m; sourceTree = "<group>"; };
+		F87B4DD8D34961AD5E7DA5D6 /* TAUserTMDBSessionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAUserTMDBSessionObject.m; sourceTree = "<group>"; };
 		F87B4E14952637601577B68D /* TADiscoverRequestParametersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADiscoverRequestParametersModel.h; sourceTree = "<group>"; };
 		F87B4E42E36B9F37C5574468 /* TAUserAuthInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAUserAuthInfo.m; sourceTree = "<group>"; };
 		F87B4E5D25D3358BB4E5DCD6 /* TAAddFavoriteRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddFavoriteRequestModel.h; sourceTree = "<group>"; };
@@ -338,6 +344,8 @@
 				5684E31F1B5E272A0004DD14 /* TAListItemObject.m */,
 				5684E3201B5E272A0004DD14 /* TAListResponseObject.h */,
 				5684E3211B5E272A0004DD14 /* TAListResponseObject.m */,
+				F87B4DD8D34961AD5E7DA5D6 /* TAUserTMDBSessionObject.m */,
+				F87B49D144D0E242D988A76C /* TAUserTMDBSessionObject.h */,
 			);
 			path = RealmModels;
 			sourceTree = "<group>";
@@ -370,6 +378,7 @@
 				5684E32B1B5E272A0004DD14 /* Assemblies */,
 				5684E3321B5E272A0004DD14 /* TAAppDelegate.h */,
 				5684E3331B5E272A0004DD14 /* TAAppDelegate.m */,
+				F87B4EE4C172CE74E361FFD5 /* ThreadManagement */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -619,6 +628,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F87B4EE4C172CE74E361FFD5 /* ThreadManagement */ = {
+			isa = PBXGroup;
+			children = (
+				F87B41F2F3F339CC24649B34 /* TADispatchManagement.m */,
+				F87B4529FC2BD9F0B360A1DF /* TADispatchManagement.h */,
+			);
+			path = ThreadManagement;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -815,6 +833,8 @@
 				F87B41263BCD66B2D9029C6B /* TAWatchlistRequestParametersModel.m in Sources */,
 				F87B401B19568AAC5584FCE2 /* TAAddWatchlistRequestModel.m in Sources */,
 				F87B45DE1291A6CD296FA321 /* TAAddFavoriteRequestModel.m in Sources */,
+				F87B49922B29657BCCFB7936 /* TAUserTMDBSessionObject.m in Sources */,
+				F87B413A8D7C83E8C9B723FA /* TADispatchManagement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,6 +959,7 @@
 				INFOPLIST_PREFIX_HEADER = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
@@ -953,6 +974,7 @@
 				INFOPLIST_PREFIX_HEADER = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};

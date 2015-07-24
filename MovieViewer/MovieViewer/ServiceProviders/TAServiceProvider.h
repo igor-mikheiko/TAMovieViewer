@@ -7,7 +7,6 @@
 //
 
 #import "OVCHTTPSessionManager.h"
-
 @class TANewTokenResponseModel;
 @class TAUserAuthInfo;
 @class TAValidateResponseModel;
@@ -22,6 +21,10 @@
 @class TAAddFavoriteRequestModel;
 
 @interface TAServiceProvider : OVCHTTPSessionManager
+
+- (void) checkUser: (NSString *)username idAuthorized: (void (^)(BOOL isAuthorized)) checkComplition;
+
+- (void) logoutCurrentUser;
 
 - (void) generateValidTokenWithSuccessBlock: (void  (^)(TANewTokenResponseModel *)) success
                               andErrorBlock: (void (^) (NSError *)) errorBlock;
