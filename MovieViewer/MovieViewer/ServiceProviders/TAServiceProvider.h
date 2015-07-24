@@ -22,7 +22,7 @@
 
 @interface TAServiceProvider : OVCHTTPSessionManager
 
-- (void) checkUser: (NSString *)username idAuthorized: (void (^)(BOOL isAuthorized)) checkComplition;
+- (void) checkUser: (NSString *)username isAuthorized: (void (^)(BOOL isAuthorized)) checkCompletion;
 
 - (void) logoutCurrentUser;
 
