@@ -9,6 +9,7 @@
 #import "TARootViewModel.h"
 
 @implementation TARootViewModel
+@synthesize viewDelegate;
 
 - (void)preloadScreen
 {

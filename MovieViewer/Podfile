@@ -12,3 +12,11 @@ pod 'Overcoat', :git => 'https://github.com/alesanro/Overcoat.git'
 pod 'Masonry'
 pod 'CocoaLumberjack'
 pod 'UIScrollView-InfiniteScroll'
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = 'NS_BLOCK_ASSERTIONS'
+        end
+    end
+end

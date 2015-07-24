@@ -56,6 +56,13 @@
 		568A106E1B62A41600AE97F5 /* TADiscoveryMovieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A106D1B62A41600AE97F5 /* TADiscoveryMovieViewModel.m */; };
 		568A10731B62AAD100AE97F5 /* TAMovieListItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A10721B62AAD100AE97F5 /* TAMovieListItemCell.m */; };
 		568A10761B62AAEB00AE97F5 /* TAMovieListItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A10751B62AAEB00AE97F5 /* TAMovieListItemViewModel.m */; };
+		568A107A1B62B28A00AE97F5 /* TAMovieListItemActionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A10791B62B28A00AE97F5 /* TAMovieListItemActionObject.m */; };
+		568A107F1B62CDCF00AE97F5 /* TAOfflineActionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A107E1B62CDCF00AE97F5 /* TAOfflineActionsManager.m */; };
+		568A10821B62CE3A00AE97F5 /* TAAddFavoriteAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A10811B62CE3A00AE97F5 /* TAAddFavoriteAction.m */; };
+		568A10851B62CE4900AE97F5 /* TARemoveFavoriteAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A10841B62CE4900AE97F5 /* TARemoveFavoriteAction.m */; };
+		568A10881B62CE5800AE97F5 /* TAAddWatchedAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A10871B62CE5800AE97F5 /* TAAddWatchedAction.m */; };
+		568A108B1B62CE6400AE97F5 /* TARemoveWatchedAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A108A1B62CE6400AE97F5 /* TARemoveWatchedAction.m */; };
+		568A108E1B62D1FB00AE97F5 /* TAListItemAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 568A108D1B62D1FB00AE97F5 /* TAListItemAction.m */; };
 		56D7F2D61B5C0F52005707AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D51B5C0F52005707AD /* Images.xcassets */; };
 		56D7F2D91B5C0F52005707AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D7F2D71B5C0F52005707AD /* LaunchScreen.xib */; };
 		56D7F2E51B5C0F52005707AD /* MovieViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7F2E41B5C0F52005707AD /* MovieViewerTests.m */; };
@@ -188,6 +195,21 @@
 		568A10741B62AAEB00AE97F5 /* TAMovieListItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMovieListItemViewModel.h; sourceTree = "<group>"; };
 		568A10751B62AAEB00AE97F5 /* TAMovieListItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMovieListItemViewModel.m; sourceTree = "<group>"; };
 		568A10771B62ABCB00AE97F5 /* TAMovieListItemActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMovieListItemActionDelegate.h; sourceTree = "<group>"; };
+		568A10781B62B28A00AE97F5 /* TAMovieListItemActionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMovieListItemActionObject.h; sourceTree = "<group>"; };
+		568A10791B62B28A00AE97F5 /* TAMovieListItemActionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMovieListItemActionObject.m; sourceTree = "<group>"; };
+		568A107C1B62CD1700AE97F5 /* TAActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAActionProtocol.h; sourceTree = "<group>"; };
+		568A107D1B62CDCF00AE97F5 /* TAOfflineActionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOfflineActionsManager.h; sourceTree = "<group>"; };
+		568A107E1B62CDCF00AE97F5 /* TAOfflineActionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOfflineActionsManager.m; sourceTree = "<group>"; };
+		568A10801B62CE3A00AE97F5 /* TAAddFavoriteAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddFavoriteAction.h; sourceTree = "<group>"; };
+		568A10811B62CE3A00AE97F5 /* TAAddFavoriteAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddFavoriteAction.m; sourceTree = "<group>"; };
+		568A10831B62CE4900AE97F5 /* TARemoveFavoriteAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARemoveFavoriteAction.h; sourceTree = "<group>"; };
+		568A10841B62CE4900AE97F5 /* TARemoveFavoriteAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARemoveFavoriteAction.m; sourceTree = "<group>"; };
+		568A10861B62CE5800AE97F5 /* TAAddWatchedAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAddWatchedAction.h; sourceTree = "<group>"; };
+		568A10871B62CE5800AE97F5 /* TAAddWatchedAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAddWatchedAction.m; sourceTree = "<group>"; };
+		568A10891B62CE6400AE97F5 /* TARemoveWatchedAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TARemoveWatchedAction.h; sourceTree = "<group>"; };
+		568A108A1B62CE6400AE97F5 /* TARemoveWatchedAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TARemoveWatchedAction.m; sourceTree = "<group>"; };
+		568A108C1B62D1FB00AE97F5 /* TAListItemAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAListItemAction.h; sourceTree = "<group>"; };
+		568A108D1B62D1FB00AE97F5 /* TAListItemAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAListItemAction.m; sourceTree = "<group>"; };
 		56D7F2C51B5C0F52005707AD /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D7F2C91B5C0F52005707AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D7F2D51B5C0F52005707AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -280,6 +302,7 @@
 		5684E2FC1B5E27290004DD14 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				568A107B1B62CCF800AE97F5 /* Actions */,
 				568A10631B62873200AE97F5 /* Paginating */,
 				5684E2FD1B5E27290004DD14 /* Navigation */,
 			);
@@ -351,6 +374,8 @@
 				F87B49D144D0E242D988A76C /* TAUserTMDBSessionObject.h */,
 				564788D11B62726800CAC87D /* TAUserProfile.h */,
 				564788D21B62726800CAC87D /* TAUserProfile.m */,
+				568A10781B62B28A00AE97F5 /* TAMovieListItemActionObject.h */,
+				568A10791B62B28A00AE97F5 /* TAMovieListItemActionObject.m */,
 			);
 			path = RealmModels;
 			sourceTree = "<group>";
@@ -571,6 +596,26 @@
 				568A10751B62AAEB00AE97F5 /* TAMovieListItemViewModel.m */,
 			);
 			path = "User List Item Cell";
+			sourceTree = "<group>";
+		};
+		568A107B1B62CCF800AE97F5 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				568A107C1B62CD1700AE97F5 /* TAActionProtocol.h */,
+				568A107D1B62CDCF00AE97F5 /* TAOfflineActionsManager.h */,
+				568A107E1B62CDCF00AE97F5 /* TAOfflineActionsManager.m */,
+				568A10801B62CE3A00AE97F5 /* TAAddFavoriteAction.h */,
+				568A10811B62CE3A00AE97F5 /* TAAddFavoriteAction.m */,
+				568A10831B62CE4900AE97F5 /* TARemoveFavoriteAction.h */,
+				568A10841B62CE4900AE97F5 /* TARemoveFavoriteAction.m */,
+				568A10861B62CE5800AE97F5 /* TAAddWatchedAction.h */,
+				568A10871B62CE5800AE97F5 /* TAAddWatchedAction.m */,
+				568A10891B62CE6400AE97F5 /* TARemoveWatchedAction.h */,
+				568A108A1B62CE6400AE97F5 /* TARemoveWatchedAction.m */,
+				568A108C1B62D1FB00AE97F5 /* TAListItemAction.h */,
+				568A108D1B62D1FB00AE97F5 /* TAListItemAction.m */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 		56D7F2BC1B5C0F52005707AD = {
@@ -818,8 +863,11 @@
 				5684E3901B5E272A0004DD14 /* TAWatchedViewController.m in Sources */,
 				568A106E1B62A41600AE97F5 /* TADiscoveryMovieViewModel.m in Sources */,
 				5684E3921B5E272A0004DD14 /* TAWatchedViewModel.m in Sources */,
+				568A10821B62CE3A00AE97F5 /* TAAddFavoriteAction.m in Sources */,
 				5684E3731B5E272A0004DD14 /* TAIntegerObject.m in Sources */,
+				568A108B1B62CE6400AE97F5 /* TARemoveWatchedAction.m in Sources */,
 				568A10731B62AAD100AE97F5 /* TAMovieListItemCell.m in Sources */,
+				568A10851B62CE4900AE97F5 /* TARemoveFavoriteAction.m in Sources */,
 				568A10661B62874C00AE97F5 /* TACollectionPaginator.m in Sources */,
 				5684E37C1B5E272A0004DD14 /* TAAppDelegate.m in Sources */,
 				5684E3721B5E272A0004DD14 /* TAFloatObject.m in Sources */,
@@ -831,19 +879,23 @@
 				5684E3771B5E272A0004DD14 /* TAServiceProvider.m in Sources */,
 				5684E3751B5E272A0004DD14 /* TAListResponseObject.m in Sources */,
 				5684E38F1B5E272A0004DD14 /* TARootViewModel.m in Sources */,
+				568A107A1B62B28A00AE97F5 /* TAMovieListItemActionObject.m in Sources */,
 				5684E3851B5E272A0004DD14 /* TALoginViewController.m in Sources */,
 				5684E3691B5E272A0004DD14 /* TAListChangedResponseModel.m in Sources */,
 				5684E37E1B5E272A0004DD14 /* TAViewModel.m in Sources */,
 				568A106B1B62A40000AE97F5 /* TAMovieCell.m in Sources */,
 				5684E3701B5E272A0004DD14 /* TADiscoveryObject.m in Sources */,
+				568A107F1B62CDCF00AE97F5 /* TAOfflineActionsManager.m in Sources */,
 				5684E38C1B5E272A0004DD14 /* TAMenuViewModel.m in Sources */,
 				5684E3791B5E272A0004DD14 /* TAApplicationAssembly.m in Sources */,
 				5684E3741B5E272A0004DD14 /* TAListItemObject.m in Sources */,
+				568A108E1B62D1FB00AE97F5 /* TAListItemAction.m in Sources */,
 				5684E3651B5E272A0004DD14 /* UIViewController+ChildViews.m in Sources */,
 				564788D01B624C1100CAC87D /* RLMObject+Mantle.m in Sources */,
 				5684E37F1B5E272A0004DD14 /* TADiscoveryViewController.m in Sources */,
 				5684E38D1B5E272A0004DD14 /* TAMainViewController.m in Sources */,
 				5684E3881B5E272A0004DD14 /* TACentralViewController.m in Sources */,
+				568A10881B62CE5800AE97F5 /* TAAddWatchedAction.m in Sources */,
 				56E364701B61229200908459 /* NSError+EmbeddedError.m in Sources */,
 				5684E38E1B5E272A0004DD14 /* TARootViewController.m in Sources */,
 				56E3645E1B60CB8800908459 /* TAFacadeAbstract.m in Sources */,
@@ -936,6 +988,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					NS_BLOCK_ASSERTIONS,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

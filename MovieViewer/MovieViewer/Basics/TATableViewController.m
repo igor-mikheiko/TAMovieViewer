@@ -31,6 +31,9 @@ NSString *const TATableViewControllerNibName = @"TATableViewController";
     }];
 
     self.data = self.viewModel.fetchedData;
+    if ([self.data count] == 0) {
+        [self.viewModel fetchNextData];
+    }
     [self.tableView reloadData];
 }
 

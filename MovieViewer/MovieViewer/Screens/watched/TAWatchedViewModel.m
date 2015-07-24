@@ -17,6 +17,7 @@
 @implementation TAWatchedViewModel {
     NSUInteger _currentPage;
 }
+@synthesize viewDelegate;
 
 - (void)fetchNextData
 {

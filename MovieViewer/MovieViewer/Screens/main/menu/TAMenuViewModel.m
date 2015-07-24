@@ -10,6 +10,7 @@
 #import "TALoginFacade.h"
 
 @implementation TAMenuViewModel
+@synthesize viewDelegate;
 
 - (void)performShowDiscovery
 {
