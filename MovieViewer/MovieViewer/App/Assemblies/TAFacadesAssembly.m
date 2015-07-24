@@ -11,6 +11,10 @@
 #import "TAFacadeAbstract.h"
 #import "TALoginFacade.h"
 #import "TADiscoveryFacade.h"
+#import "TAFavoritesMoviesFacade.h"
+#import "TAWatchedMoviesFacade.h"
+
+static NSUInteger const kDefaultPageSize = 20;
 
 @implementation TAFacadesAssembly
 
@@ -34,6 +38,25 @@
     return [TyphoonDefinition withClass:[TADiscoveryFacade class] configuration:^(TyphoonDefinition *definition) {
         definition.parent = [self _basicFacade];
         [definition injectProperty:@selector(loginFacade) with:[self loginFacade]];
+        [definition injectProperty:@selector(pageSize) with:@(kDefaultPageSize)];
+    }];
+}
+
+- (TAFavoritesMoviesFacade *)favoriteMoviesFacade
+{
+    return [TyphoonDefinition withClass:[TAFavoritesMoviesFacade class] configuration:^(TyphoonDefinition *definition) {
+        definition.parent = [self _basicFacade];
+        [definition injectProperty:@selector(loginFacade) with:[self loginFacade]];
+        [definition injectProperty:@selector(pageSize) with:@(kDefaultPageSize)];
+    }];
+}
+
+- (TAWatchedMoviesFacade *)watchedMoviesFacade
+{
+    return [TyphoonDefinition withClass:[TAWatchedMoviesFacade class] configuration:^(TyphoonDefinition *definition) {
+        definition.parent = [self _basicFacade];
+        [definition injectProperty:@selector(loginFacade) with:[self loginFacade]];
+        [definition injectProperty:@selector(pageSize) with:@(kDefaultPageSize)];
     }];
 }
 

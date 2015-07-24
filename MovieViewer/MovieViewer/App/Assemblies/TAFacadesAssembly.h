@@ -8,9 +8,12 @@
 
 #import "TyphoonAssembly.h"
 
-@class TAServicesAssembly,
-TALoginFacade,
-TADiscoveryFacade;
+@protocol TAServicesDataSource;
+
+@class TALoginFacade,
+TADiscoveryFacade,
+TAFavoritesMoviesFacade,
+TAWatchedMoviesFacade;
 
 @protocol TAFacadesDataSource <NSObject>
 
@@ -18,10 +21,14 @@ TADiscoveryFacade;
 
 - (TADiscoveryFacade *)discoveryFacade;
 
+- (TAFavoritesMoviesFacade *)favoriteMoviesFacade;
+
+- (TAWatchedMoviesFacade *)watchedMoviesFacade;
+
 @end
 
 @interface TAFacadesAssembly : TyphoonAssembly <TAFacadesDataSource>
 
-@property (nonatomic) TAServicesAssembly *servicesAssembly;
+@property (nonatomic) TyphoonAssembly<TAServicesDataSource> *servicesAssembly;
 
 @end

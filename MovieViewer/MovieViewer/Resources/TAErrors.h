@@ -16,6 +16,8 @@ static inline NSString *TAMakeAppDomain(NSString *appendix)
 
 FOUNDATION_EXPORT NSString *const TALoginFacadeError;
 FOUNDATION_EXPORT NSString *const TADiscoveryFacadeError;
+FOUNDATION_EXPORT NSString *const TAFavoritesMoviesFacadeError;
+FOUNDATION_EXPORT NSString *const TAWatchedMoviesFacadeError;
 
 typedef NS_ENUM(NSUInteger, TALoginError) {
     TALoginErrorParameters,
