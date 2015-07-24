@@ -60,25 +60,19 @@
     TAUserAuthInfo *authInfo = [TAUserAuthInfo new];
     authInfo.login = username;
     authInfo.password = password;
-    [self.serviceProvider validateUserAuthInfo:authInfo withSuccessBlock:^(TAValidateResponseModel *authResponse) {
-        if (authResponse.success) {
-            RLMRealm *storage = [RLMRealm defaultRealm];
-            TAUserProfile *user = [TAUserProfile objectForPrimaryKey:username];
-            if (user) {
-                _user = user;
-            } else {
-                TAUserProfile *newUser = [TAUserProfile new];
-                newUser.username = username;
-                [storage beginWriteTransaction];
-                _user = [TAUserProfile createOrUpdateInRealm:storage withValue:newUser];
-                [storage commitWriteTransaction];
-            }
-            BLOCK_EXEC(success)
+    [self.serviceProvider validateUserAuthInfo:authInfo withSuccessBlock:^{
+        RLMRealm *storage = [RLMRealm defaultRealm];
+        TAUserProfile *user = [TAUserProfile objectForPrimaryKey:username];
+        if (user) {
+            _user = user;
         } else {
-            _user = nil;
-            NSError *error = [NSError errorWithDomain:TAMakeAppDomain(TALoginFacadeError) code:TALoginUndefined userInfo:nil];
-            BLOCK_EXEC(failure, error)
+            TAUserProfile *newUser = [TAUserProfile new];
+            newUser.username = username;
+            [storage beginWriteTransaction];
+            _user = [TAUserProfile createOrUpdateInRealm:storage withValue:newUser];
+            [storage commitWriteTransaction];
         }
+        BLOCK_EXEC(success)
     } andErrorBlock:^(NSError *error) {
         _user = nil;
         NSError *loginError = [NSError errorWithUnderlyingError:error domain:TAMakeAppDomain(TALoginFacadeError) code:1 userInfo:nil];

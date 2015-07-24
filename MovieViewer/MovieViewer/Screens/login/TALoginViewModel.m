@@ -32,11 +32,6 @@
         });
     };
 
-    [self.viewDelegate loginActionSuccessed];
-    BLOCK_EXEC(afterSuccess)
-    return;
-
-
     if (self.loginString.length == 0 || self.passwordString.length == 0) {
         NSError *error = [NSError errorWithDomain:TAMakeAppDomain(@"loginViewModel") code:1 userInfo:@{ NSLocalizedDescriptionKey: @"Too short parameters" }];
         DDLogVerbose(@"Login failed::%@", [error localizedDescription]);

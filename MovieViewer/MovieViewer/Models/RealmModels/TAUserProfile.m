@@ -10,4 +10,8 @@
 
 @implementation TAUserProfile
 
++ (NSString *)primaryKey {
+    return @"username";
+}
+
 @end
