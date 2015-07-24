@@ -40,6 +40,7 @@ NSString *const kParametersListPageKey = @"page";
 {
     self = [super initWithBaseURL:[NSURL URLWithString:TABaseServicePath]];
     if (self) {
+        [self.reachabilityManager startMonitoring];
     }
     return self;
 }
