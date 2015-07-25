@@ -10,6 +10,10 @@
 #import "TAErrors.h"
 #import "TALoginFacade.h"
 
+
+NSString *const kTestUserLogin = @"inkognitto";
+NSString *const kTestUserPassw = @"zaq1XSW@";
+
 @implementation TALoginViewModel
 @synthesize viewDelegate;
 
@@ -17,8 +21,8 @@
 {
     self = [super init];
     if (self) {
-        self.loginString = @"test";
-        self.passwordString = @"1";
+        self.loginString = kTestUserLogin;
+        self.passwordString = kTestUserPassw;
     }
     return self;
 }
